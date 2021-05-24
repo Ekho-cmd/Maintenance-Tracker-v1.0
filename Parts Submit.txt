@@ -1,0 +1,428 @@
+function submitparts() {
+  
+  var ss = SpreadsheetApp.getActiveSpreadsheet();
+  var partssheet = ss.getSheetByName('Parts');//Parts sheet
+  var input = ss.getSheetByName('Input'); //Data entry sheet
+  var inputcell = input.getRange('A2');
+  var select = inputcell.getValue();
+  var resource = ss.getSheetByName('Resource');//Resource sheet
+  var parts = ss.getSheetByName('Parts');//Parts sheet
+  var valuecount = ("46");
+  
+  
+  
+   //Input Values
+  var partvalues = [[input.getRange("B2").getValue(),// #1
+                     input.getRange("Q2").getValue(),
+                     input.getRange("A2").getValue(),
+                     input.getRange("D2").getValue(),
+                     input.getRange("M2").getValue(),// #5
+                 resource.getRange("DS7").getValue(),
+                 resource.getRange("DT6").getValue(),
+                 resource.getRange("DU7").getValue(),
+                 resource.getRange("DV6").getValue(),
+                 resource.getRange("DW7").getValue(),// #10
+                 resource.getRange("DX6").getValue(),
+                     input.getRange("P7").getValue(),
+                 resource.getRange("DZ7").getValue(),
+                 resource.getRange("EA6").getValue(),
+                 resource.getRange("EB7").getValue(),// #15
+                 resource.getRange("EC6").getValue(),
+                 resource.getRange("ED7").getValue(),
+                 resource.getRange("EE6").getValue(),
+                 resource.getRange("EF7").getValue(),
+                 resource.getRange("EG6").getValue(),// #20
+                 resource.getRange("EH7").getValue(),
+                 resource.getRange("EI6").getValue(),
+                 resource.getRange("EJ7").getValue(),
+                 resource.getRange("EK6").getValue(),
+                 resource.getRange("EL7").getValue(),// #25
+                 resource.getRange("EM6").getValue(),
+                 resource.getRange("EN7").getValue(),
+                 resource.getRange("EO6").getValue(), 
+                 resource.getRange("EP7").getValue(),
+                 resource.getRange("EQ6").getValue(),// #30
+                 resource.getRange("ER7").getValue(),
+                 resource.getRange("ES6").getValue(),
+                 resource.getRange("ET7").getValue(),
+                 resource.getRange("EU6").getValue(),
+                 resource.getRange("EV7").getValue(),// #35
+                 resource.getRange("EW6").getValue(),
+                 resource.getRange("EX7").getValue(),
+                 resource.getRange("EY6").getValue(),
+                 resource.getRange("EZ7").getValue(),
+                 resource.getRange("FA6").getValue(),// #40
+                 resource.getRange("FB7").getValue(),
+                 resource.getRange("FC6").getValue(),
+                 resource.getRange("FD7").getValue(),
+                 resource.getRange("FE6").getValue(),
+                 resource.getRange("FF7").getValue(),// #45
+                 resource.getRange("FG6").getValue(),]];
+                
+                 
+             
+         
+                
+                if(select == '112012'){
+    parts.getRange(parts.getLastRow()+1, 1, 1, valuecount).setValues(partvalues)}
+                
+                if(select == '112013'){
+    parts.getRange(parts.getLastRow()+1, 1, 1, valuecount).setValues(partvalues)}
+
+                if(select == '112023'){
+    parts.getRange(parts.getLastRow()+1, 1, 1, valuecount).setValues(partvalues)}
+
+                if(select == '112074'){
+    parts.getRange(parts.getLastRow()+1, 1, 1, valuecount).setValues(partvalues)}
+ 
+                if(select == '112077'){
+    parts.getRange(parts.getLastRow()+1, 1, 1, valuecount).setValues(partvalues)}
+ 
+                if(select == '112082'){
+    parts.getRange(parts.getLastRow()+1, 1, 1, valuecount).setValues(partvalues)}
+ 
+                if(select == '112083'){
+    parts.getRange(parts.getLastRow()+1, 1, 1, valuecount).setValues(partvalues)}
+ 
+                if(select == '112101'){
+    parts.getRange(parts.getLastRow()+1, 1, 1, valuecount).setValues(partvalues)}
+ 
+                if(select == '112105'){
+    parts.getRange(parts.getLastRow()+1, 1, 1, valuecount).setValues(partvalues)}
+ 
+                if(select == '112156'){
+    parts.getRange(parts.getLastRow()+1, 1, 1, valuecount).setValues(partvalues)}
+ 
+                if(select == '112157'){
+    parts.getRange(parts.getLastRow()+1, 1, 1, valuecount).setValues(partvalues)}
+ 
+                if(select == '112161'){
+    parts.getRange(parts.getLastRow()+1, 1, 1, valuecount).setValues(partvalues)}
+ 
+                if(select == '112162'){
+    parts.getRange(parts.getLastRow()+1, 1, 1, valuecount).setValues(partvalues)}
+ 
+                if(select == '112169'){
+    parts.getRange(parts.getLastRow()+1, 1, 1, valuecount).setValues(partvalues)}
+ 
+                if(select == '112170'){
+    parts.getRange(parts.getLastRow()+1, 1, 1, valuecount).setValues(partvalues)}
+ 
+                if(select == '112171'){
+    parts.getRange(parts.getLastRow()+1, 1, 1, valuecount).setValues(partvalues)}
+ 
+                if(select == '112172'){
+    parts.getRange(parts.getLastRow()+1, 1, 1, valuecount).setValues(partvalues)}
+ 
+                if(select == '112182'){
+    parts.getRange(parts.getLastRow()+1, 1, 1, valuecount).setValues(partvalues)}
+ 
+                if(select == '112198'){
+    parts.getRange(parts.getLastRow()+1, 1, 1, valuecount).setValues(partvalues)}
+ 
+                if(select == '112223'){
+    parts.getRange(parts.getLastRow()+1, 1, 1, valuecount).setValues(partvalues)}
+ 
+                if(select == '112224'){
+    parts.getRange(parts.getLastRow()+1, 1, 1, valuecount).setValues(partvalues)}
+ 
+                if(select == '112225'){
+    parts.getRange(parts.getLastRow()+1, 1, 1, valuecount).setValues(partvalues)}
+ 
+                if(select == '112226'){
+    parts.getRange(parts.getLastRow()+1, 1, 1, valuecount).setValues(partvalues)}
+   
+                if(select == '112227'){
+    parts.getRange(parts.getLastRow()+1, 1, 1, valuecount).setValues(partvalues)}
+ 
+                if(select == '112229'){
+    parts.getRange(parts.getLastRow()+1, 1, 1, valuecount).setValues(partvalues)}
+ 
+                if(select == '112231'){
+    parts.getRange(parts.getLastRow()+1, 1, 1, valuecount).setValues(partvalues)}
+ 
+                if(select == '112233'){
+    parts.getRange(parts.getLastRow()+1, 1, 1, valuecount).setValues(partvalues)}
+ 
+                if(select == '112234'){
+    parts.getRange(parts.getLastRow()+1, 1, 1, valuecount).setValues(partvalues)}
+ 
+                if(select == '112235'){
+    parts.getRange(parts.getLastRow()+1, 1, 1, valuecount).setValues(partvalues)}
+ 
+                if(select == '112237'){
+    parts.getRange(parts.getLastRow()+1, 1, 1, valuecount).setValues(partvalues)}
+ 
+                if(select == '112238'){
+    parts.getRange(parts.getLastRow()+1, 1, 1, valuecount).setValues(partvalues)}
+ 
+                if(select == '112240'){
+    parts.getRange(parts.getLastRow()+1, 1, 1, valuecount).setValues(partvalues)}
+ 
+                if(select == '112241'){
+    parts.getRange(parts.getLastRow()+1, 1, 1, valuecount).setValues(partvalues)}
+ 
+                if(select == '112242'){
+    parts.getRange(parts.getLastRow()+1, 1, 1, valuecount).setValues(partvalues)}
+ 
+                if(select == '112243'){
+    parts.getRange(parts.getLastRow()+1, 1, 1, valuecount).setValues(partvalues)}
+ 
+                if(select == '112244'){
+    parts.getRange(parts.getLastRow()+1, 1, 1, valuecount).setValues(partvalues)}
+ 
+                if(select == '112250'){
+    parts.getRange(parts.getLastRow()+1, 1, 1, valuecount).setValues(partvalues)}
+ 
+                if(select == '112253'){
+    parts.getRange(parts.getLastRow()+1, 1, 1, valuecount).setValues(partvalues)}
+ 
+                if(select == '112263'){
+    parts.getRange(parts.getLastRow()+1, 1, 1, valuecount).setValues(partvalues)}
+ 
+                if(select == '112268'){
+    parts.getRange(parts.getLastRow()+1, 1, 1, valuecount).setValues(partvalues)}
+ 
+                if(select == '112269'){
+    parts.getRange(parts.getLastRow()+1, 1, 1, valuecount).setValues(partvalues)}
+ 
+                if(select == '112293'){
+    parts.getRange(parts.getLastRow()+1, 1, 1, valuecount).setValues(partvalues)}
+ 
+                if(select == '112299'){
+    parts.getRange(parts.getLastRow()+1, 1, 1, valuecount).setValues(partvalues)}
+ 
+                if(select == '112300'){
+    parts.getRange(parts.getLastRow()+1, 1, 1, valuecount).setValues(partvalues)}
+ 
+                if(select == '112303'){
+    parts.getRange(parts.getLastRow()+1, 1, 1, valuecount).setValues(partvalues)}
+ 
+                if(select == '112304'){
+    parts.getRange(parts.getLastRow()+1, 1, 1, valuecount).setValues(partvalues)}
+ 
+                if(select == '112305'){
+    parts.getRange(parts.getLastRow()+1, 1, 1, valuecount).setValues(partvalues)}
+ 
+                if(select == '112306'){
+    parts.getRange(parts.getLastRow()+1, 1, 1, valuecount).setValues(partvalues)}
+ 
+                if(select == '112308'){
+    parts.getRange(parts.getLastRow()+1, 1, 1, valuecount).setValues(partvalues)}
+ 
+                if(select == '112312'){
+    parts.getRange(parts.getLastRow()+1, 1, 1, valuecount).setValues(partvalues)}
+ 
+                if(select == '112320'){
+    parts.getRange(parts.getLastRow()+1, 1, 1, valuecount).setValues(partvalues)}
+ 
+                if(select == '112321'){
+    parts.getRange(parts.getLastRow()+1, 1, 1, valuecount).setValues(partvalues)}
+ 
+                if(select == '112323'){
+    parts.getRange(parts.getLastRow()+1, 1, 1, valuecount).setValues(partvalues)}
+ 
+                if(select == '112325'){
+    parts.getRange(parts.getLastRow()+1, 1, 1, valuecount).setValues(partvalues)}
+ 
+                if(select == '112348'){
+    parts.getRange(parts.getLastRow()+1, 1, 1, valuecount).setValues(partvalues)}
+ 
+                if(select == '112349'){
+    parts.getRange(parts.getLastRow()+1, 1, 1, valuecount).setValues(partvalues)}
+ 
+                if(select == '112350'){
+    parts.getRange(parts.getLastRow()+1, 1, 1, valuecount).setValues(partvalues)}
+ 
+                if(select == '112351'){
+    parts.getRange(parts.getLastRow()+1, 1, 1, valuecount).setValues(partvalues)}
+ 
+                if(select == '112352'){
+    parts.getRange(parts.getLastRow()+1, 1, 1, valuecount).setValues(partvalues)}
+ 
+                if(select == '112353'){
+    parts.getRange(parts.getLastRow()+1, 1, 1, valuecount).setValues(partvalues)}
+ 
+                if(select == '112354'){
+    parts.getRange(parts.getLastRow()+1, 1, 1, valuecount).setValues(partvalues)}
+ 
+                if(select == '112355'){
+    parts.getRange(parts.getLastRow()+1, 1, 1, valuecount).setValues(partvalues)}
+ 
+                if(select == '112364'){
+    parts.getRange(parts.getLastRow()+1, 1, 1, valuecount).setValues(partvalues)}
+ 
+                if(select == '112366'){
+    parts.getRange(parts.getLastRow()+1, 1, 1, valuecount).setValues(partvalues)}
+ 
+                if(select == '112369'){
+    parts.getRange(parts.getLastRow()+1, 1, 1, valuecount).setValues(partvalues)}
+ 
+                if(select == '112375'){
+    parts.getRange(parts.getLastRow()+1, 1, 1, valuecount).setValues(partvalues)}
+ 
+                if(select == '112376'){
+    parts.getRange(parts.getLastRow()+1, 1, 1, valuecount).setValues(partvalues)}
+ 
+                if(select == '112381'){
+    parts.getRange(parts.getLastRow()+1, 1, 1, valuecount).setValues(partvalues)}
+ 
+                if(select == '112383'){
+    parts.getRange(parts.getLastRow()+1, 1, 1, valuecount).setValues(partvalues)}
+ 
+                if(select == '112385'){
+    parts.getRange(parts.getLastRow()+1, 1, 1, valuecount).setValues(partvalues)}
+ 
+                if(select == '112387'){
+    parts.getRange(parts.getLastRow()+1, 1, 1, valuecount).setValues(partvalues)}
+ 
+                if(select == '112388'){
+    parts.getRange(parts.getLastRow()+1, 1, 1, valuecount).setValues(partvalues)}
+ 
+                if(select == '112393'){
+    parts.getRange(parts.getLastRow()+1, 1, 1, valuecount).setValues(partvalues)}
+ 
+                if(select == '112395'){
+    parts.getRange(parts.getLastRow()+1, 1, 1, valuecount).setValues(partvalues)}
+ 
+                if(select == '112403'){
+    parts.getRange(parts.getLastRow()+1, 1, 1, valuecount).setValues(partvalues)}
+ 
+                if(select == '112404'){
+    parts.getRange(parts.getLastRow()+1, 1, 1, valuecount).setValues(partvalues)}
+ 
+                if(select == '112407'){
+    parts.getRange(parts.getLastRow()+1, 1, 1, valuecount).setValues(partvalues)}
+ 
+                if(select == '112409'){
+    parts.getRange(parts.getLastRow()+1, 1, 1, valuecount).setValues(partvalues)}
+ 
+                if(select == '112410'){
+    parts.getRange(parts.getLastRow()+1, 1, 1, valuecount).setValues(partvalues)}
+ 
+                if(select == '112413'){
+    parts.getRange(parts.getLastRow()+1, 1, 1, valuecount).setValues(partvalues)}
+ 
+                if(select == '112428'){
+    parts.getRange(parts.getLastRow()+1, 1, 1, valuecount).setValues(partvalues)}
+ 
+                if(select == '112429'){
+    parts.getRange(parts.getLastRow()+1, 1, 1, valuecount).setValues(partvalues)}
+ 
+                if(select == '112434'){
+    parts.getRange(parts.getLastRow()+1, 1, 1, valuecount).setValues(partvalues)}
+ 
+                if(select == '112439'){
+    parts.getRange(parts.getLastRow()+1, 1, 1, valuecount).setValues(partvalues)}
+ 
+                if(select == '112441'){
+    parts.getRange(parts.getLastRow()+1, 1, 1, valuecount).setValues(partvalues)}
+ 
+                if(select == '112447'){
+    parts.getRange(parts.getLastRow()+1, 1, 1, valuecount).setValues(partvalues)}
+ 
+                if(select == '112448'){
+    parts.getRange(parts.getLastRow()+1, 1, 1, valuecount).setValues(partvalues)}
+ 
+                if(select == '112457'){
+    parts.getRange(parts.getLastRow()+1, 1, 1, valuecount).setValues(partvalues)}
+ 
+                if(select == '112458'){
+    parts.getRange(parts.getLastRow()+1, 1, 1, valuecount).setValues(partvalues)}
+ 
+                if(select == '112459'){
+    parts.getRange(parts.getLastRow()+1, 1, 1, valuecount).setValues(partvalues)}
+ 
+                if(select == '112460'){
+    parts.getRange(parts.getLastRow()+1, 1, 1, valuecount).setValues(partvalues)}
+ 
+                if(select == '112461'){
+    parts.getRange(parts.getLastRow()+1, 1, 1, valuecount).setValues(partvalues)}
+ 
+                if(select == '112525'){
+    parts.getRange(parts.getLastRow()+1, 1, 1, valuecount).setValues(partvalues)}
+ 
+                if(select == '112546'){
+    parts.getRange(parts.getLastRow()+1, 1, 1, valuecount).setValues(partvalues)}
+ 
+                if(select == '112547'){
+    parts.getRange(parts.getLastRow()+1, 1, 1, valuecount).setValues(partvalues)}
+ 
+                if(select == '112548'){
+    parts.getRange(parts.getLastRow()+1, 1, 1, valuecount).setValues(partvalues)}
+ 
+                if(select == '112549'){
+    parts.getRange(parts.getLastRow()+1, 1, 1, valuecount).setValues(partvalues)}
+ 
+                if(select == '112562'){
+    parts.getRange(parts.getLastRow()+1, 1, 1, valuecount).setValues(partvalues)}
+ 
+                if(select == '112563'){
+    parts.getRange(parts.getLastRow()+1, 1, 1, valuecount).setValues(partvalues)}
+ 
+                if(select == '112564'){
+    parts.getRange(parts.getLastRow()+1, 1, 1, valuecount).setValues(partvalues)}
+ 
+                if(select == '112565'){
+    parts.getRange(parts.getLastRow()+1, 1, 1, valuecount).setValues(partvalues)}
+ 
+                if(select == '112566'){
+    parts.getRange(parts.getLastRow()+1, 1, 1, valuecount).setValues(partvalues)}
+ 
+                if(select == '112567'){
+    parts.getRange(parts.getLastRow()+1, 1, 1, valuecount).setValues(partvalues)}
+ 
+                if(select == '112568'){
+    parts.getRange(parts.getLastRow()+1, 1, 1, valuecount).setValues(partvalues)}
+ 
+                if(select == '112569'){
+    parts.getRange(parts.getLastRow()+1, 1, 1, valuecount).setValues(partvalues)}
+ 
+                if(select == '112572'){
+    parts.getRange(parts.getLastRow()+1, 1, 1, valuecount).setValues(partvalues)}
+ 
+                if(select == '112578'){
+    parts.getRange(parts.getLastRow()+1, 1, 1, valuecount).setValues(partvalues)}
+ 
+                if(select == '112579'){
+    parts.getRange(parts.getLastRow()+1, 1, 1, valuecount).setValues(partvalues)}
+ 
+                if(select == '112581'){
+    parts.getRange(parts.getLastRow()+1, 1, 1, valuecount).setValues(partvalues)}
+ 
+                if(select == '112584'){
+    parts.getRange(parts.getLastRow()+1, 1, 1, valuecount).setValues(partvalues)}
+ 
+                if(select == '112585'){
+    parts.getRange(parts.getLastRow()+1, 1, 1, valuecount).setValues(partvalues)}
+ 
+                if(select == '112590'){
+    parts.getRange(parts.getLastRow()+1, 1, 1, valuecount).setValues(partvalues)}
+ 
+                if(select == '112591'){
+    parts.getRange(parts.getLastRow()+1, 1, 1, valuecount).setValues(partvalues)}
+ 
+                if(select == '112593'){
+    parts.getRange(parts.getLastRow()+1, 1, 1, valuecount).setValues(partvalues)}
+ 
+                if(select == '112592'){
+    parts.getRange(parts.getLastRow()+1, 1, 1, valuecount).setValues(partvalues)}
+ 
+                if(select == '112594'){
+    parts.getRange(parts.getLastRow()+1, 1, 1, valuecount).setValues(partvalues)}
+ 
+                if(select == '112616'){
+    parts.getRange(parts.getLastRow()+1, 1, 1, valuecount).setValues(partvalues)}
+ 
+                if(select == '112617'){
+    parts.getRange(parts.getLastRow()+1, 1, 1, valuecount).setValues(partvalues)}
+ 
+                if(select == '112618'){
+    parts.getRange(parts.getLastRow()+1, 1, 1, valuecount).setValues(partvalues)}
+ 
+                if(select == '112619'){
+    parts.getRange(parts.getLastRow()+1, 1, 1, valuecount).setValues(partvalues)}
+                
+                                   
+                    }   
+  

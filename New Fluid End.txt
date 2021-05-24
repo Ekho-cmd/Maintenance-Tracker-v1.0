@@ -1,0 +1,154 @@
+function newfluidend(){
+
+                                        
+ /////////////////////////////////////////////////////////////////////////////////////////////////////////////  all seats for Quint and Carbide 
+   var ss = SpreadsheetApp.getActiveSpreadsheet();
+   var resource = ss.getSheetByName('Resource');
+   var AI4AR4 = resource.getRange("AI4:AR4");
+   var AI4AR4value = AI4AR4.getValue();
+   var AS4BB4 = resource.getRange('AS4:BB4');
+   var AS4BB4value = AS4BB4.getValue();
+   var inputFEcell = ss.getSheetByName('Input').getRange('M2');
+   var inputFEcellvalue = inputFEcell.getValue();
+   var inputSeatcell = ss.getSheetByName('Input').getRange('N2');
+   var inputSeatcellvalue = inputSeatcell.getValue();
+  
+   var tricarbseats1 = resource.getRange("AI4:AK4"); 
+   var tricarbseatsvalue1 = tricarbseats1.getValue();
+   var tricarbseats2 = resource.getRange('AN4:AP4');
+   var tricarbseatsvalue2 = tricarbseats2.getValue();
+   var tricarbdown1 = resource.getRange('AL4:AM4');
+   var tricarbdownvalue1 = tricarbdown1.getValue();
+   var tricarbdown2 = resource.getRange('AQ4:AR4');
+   var tricarbdownvalue2 = tricarbdown2.getValue();
+  
+   var AS4AU4 = resource.getRange("AS4:AU4"); 
+   var AS4AU4value = AS4AU4.getValue();
+   var AX4AZ4 = resource.getRange('AX4:AZ4');
+   var AX4AZ4value = AX4AZ4.getValue();
+   var triconvseat1 = resource.getRange('AV4:AW4');
+   var triconvseatvalue1 = triconvseat1.getValue();
+   var triconvseat2 = resource.getRange('BA4:BB4');
+   var triconvseatvalue2 = triconvseat2.getValue();
+  
+   var quintvalves = resource.getRange("Y4:AH4"); 
+   var quintvalvesvalue = quintvalves.getValue();
+   var quintpacking= resource.getRange("BC4:BG4"); 
+   var quintpackingvalue = quintpacking.getValue();
+  
+   var trivalves1 = resource.getRange("Y4:AA4"); 
+   var trivalvesvalue1 = trivalves1.getValue();
+   var trivalves2 = resource.getRange('AD4:AF4');
+   var trivalvesvalue2 = trivalves2.getValue();
+   var trivalvedown1 = resource.getRange('AB4:AC4');
+   var trivalvedown1value = trivalvedown1.getValue();
+   var trivalvedown2 = resource.getRange('AG4:AH4');
+   var trivalvedown2value = trivalvedown2.getValue();
+   var tripacking = resource.getRange("BC4:BE4"); 
+   var tripackingvalue = tripacking.getValue();
+   var tripackingdown = resource.getRange('BF4:BG4');
+   var tripackingdownvalue = tripackingdown.getValue();
+   
+  
+   equal = (inputFEcell.getValue() === resource.getRange('GF5:GF10').getValue()); //test if Quint
+  
+  if (equal){
+    
+    equal = (inputSeatcell.getValue() === resource.getRange('T6').getValue()); //test if carbide
+    
+    if(equal){
+      if(AI4AR4value <= 0) {AI4AR4.setValue(AI4AR4value + 1);}
+      if(AI4AR4value >= 1) {AI4AR4.setValue(AI4AR4value - 1);}
+      if(AS4BB4value >= 1) {AS4BB4.setValue(AS4BB4value - 1);}}} //set conventional values to zero
+
+  else
+  
+  //////////////////////////////////////////////////////////////////////////////////////////////////////////////   all seats for Triplex and Carbide
+
+ equal = (inputFEcell.getValue() === resource.getRange('GF11:GF15').getValue()); //test if Triplex
+  
+  if (equal){
+    
+    equal = (inputSeatcell.getValue() === resource.getRange('T6').getValue()); //test if carbide
+    
+    if(equal){
+      if(tricarbseatsvalue1 <= 0) {tricarbseats1.setValue(tricarbseatsvalue1 + 1);}
+      if(tricarbseatsvalue1 >= 1) {tricarbseats1.setValue(tricarbseatsvalue1 - 1);}
+      if(tricarbseatsvalue2 <= 0) {tricarbseats2.setValue(tricarbseatsvalue2 + 1);}
+      if(tricarbseatsvalue2 >= 1) {tricarbseats2.setValue(tricarbseatsvalue2 - 1);}
+      
+      if(tricarbdownvalue1 >= 1) {tricarbdown1.setValue(tricarbdownvalue1 - 1);} // set triplex values to zero
+      if(tricarbdownvalue2 >= 1) {tricarbdown2.setValue(tricarbdownvalue2 - 1);}
+      if(AS4BB4value >= 1) {AS4BB4.setValue(AS4BB4value -1);}}} // set conventioal values to zero
+  
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////  all seats for Quint and conventional 
+
+   equal = (inputFEcell.getValue() === resource.getRange('GF5:GF10').getValue()); //test if Quint
+  
+  if (equal){
+    
+    equal = (inputSeatcell.getValue() === resource.getRange('T7').getValue()); //test if conventional
+    
+    if(equal){
+      if(AS4BB4value <= 0) {AS4BB4.setValue(AS4BB4value + 1);}
+      if(AS4BB4value >= 1) {AS4BB4.setValue(AS4BB4value - 1);}
+      if(AI4AR4value >= 1) {AI4AR4.setValue(AI4AR4value - 1);}}} // set carbide values to zero
+
+   else
+  
+ //////////////////////////////////////////////////////////////////////////////////////////////////////////////   all seats for Triplex and conventional
+
+ equal = (inputFEcell.getValue() === resource.getRange('GF11:GF15').getValue()); //test if Triplex
+  
+  if (equal){
+    
+    equal = (inputSeatcell.getValue() === resource.getRange('T7').getValue()); //test if conventional
+    
+    if(equal){
+      if(AS4AU4value <= 0) {AS4AU4.setValue(AS4AU4value + 1);} // set top triplex values to 1/0
+      if(AS4AU4value >= 1) {AS4AU4.setValue(AS4AU4value - 1);}
+      if(AX4AZ4value <= 0) {AX4AZ4.setValue(AX4AZ4value + 1);} // set bottom triplex values to 1/0
+      if(AX4AZ4value >= 1) {AX4AZ4.setValue(AX4AZ4value - 1);}
+      
+      if(triconvseatvalue1 >= 1) {triconvseat1.setValue(triconvseatvalue1 - 1);} // set triplex values to zero
+      if(triconvseatvalue2 >= 1) {triconvseat2.setValue(triconvseatvalue2 - 1);}
+      if(AI4AR4value >= 1) {AI4AR4.setValue(AI4AR4value - 1);}}} // set carbide values to zero
+  
+  /////////////////////////////////////////////////////////////////////////////////////////////////////////////  all valves && packing for Quint 
+ 
+  equal = (inputFEcell.getValue() === resource.getRange('GF5:GF10').getValue()); //test if Quint
+  
+    if(equal){
+      if(quintvalvesvalue <= 0) {quintvalves.setValue(quintvalvesvalue + 1);} //quint valves
+      if(quintvalvesvalue >= 1) {quintvalves.setValue(quintvalvesvalue - 1);}
+  
+      if(quintpackingvalue <= 0) {quintpacking.setValue(quintpackingvalue + 1);} //quint packing
+      if(quintpackingvalue >= 1) {quintpacking.setValue(quintpackingvalue - 1);}}
+
+  else
+  
+  //////////////////////////////////////////////////////////////////////////////////////////////////////////////   all valves && packing for Triplex
+
+  equal = (inputFEcell.getValue() === resource.getRange('GF11:GF15').getValue()); //test if triplex
+     
+    if(equal){
+      if(trivalvesvalue1 <= 0) {trivalves1.setValue(trivalvesvalue1 + 1);} // top valve values
+      if(trivalvesvalue1 >= 1) {trivalves1.setValue(trivalvesvalue1 - 1);}
+      if(trivalvesvalue2 <= 0) {trivalves2.setValue(trivalvesvalue2 + 1);} // bottom valves values
+      if(trivalvesvalue2 >= 1) {trivalves2.setValue(trivalvesvalue2 - 1);}
+      
+      if(trivalvedown1value >= 1) {trivalvedown1.setValue(trivalvedown1value - 1);} // set top valve values to zero
+      if(trivalvedown2value >= 1) {trivalvedown2.setValue(trivalvedown2value - 1);} // set bottom valve values to zero
+      
+      if(tripackingvalue <= 0) {tripacking.setValue(tripackingvalue + 1);} // set packing values
+      if(tripackingvalue >= 1) {tripacking.setValue(tripackingvalue - 1);}
+ 
+      
+      if(tripackingdownvalue >= 1) {tripackingdown.setValue(tripackingdownvalue - 1);}} // set triplex packing values to zero
+    
+    
+  
+
+}
+    
+    

@@ -1,0 +1,98 @@
+
+function allpacking() {
+ 
+  var ss = SpreadsheetApp.getActive();
+  var resource = ss.getSheetByName('Resource').getRange('BC4:BG4');
+  var resource2 = ss.getSheetByName('Resource').getRange('BC4:BE4'); 
+  var resource3 = ss.getSheetByName('Resource').getRange('BF4:BG4');
+  var input = ss.getSheetByName('Input').getRange('M2');
+  var inputvalue = input.getValue();
+  var packingArray = resource.getValue();
+  var packingArray2 = resource2.getValue();
+  var packingArray3 = resource3.getValue();
+ 
+  var FEtypesArray = ['FMC Quint 4.5', 'GD Quint FMC Clone 4.5', 'GD Quint SPM Clone 4.5', 'SPM Quint 4.5', 'GD Quint SPM Clone 4.0', 'SPM Quint 4.0', 'FMC Tri 5.0', 'GD Tri 5.0', 'SPM Tri 5.0', 'GD TRI SPM Clone 4.5', 'SPM Tri 4.5'];
+  
+  
+  equal = (inputvalue === FEtypesArray[0]);    // Test if Quint
+  if(equal){
+  if(packingArray <= 0) {resource.setValue(packingArray + 1);}
+  if(packingArray >= 1) {resource.setValue(packingArray - 1);}}
+  
+  else
+  
+     equal = (inputvalue === FEtypesArray[1]);      // Test if Quint
+     if(equal){
+     if(packingArray <= 0) {resource.setValue(packingArray + 1);}
+     if(packingArray >= 1) {resource.setValue(packingArray - 1);}}
+  
+     else
+  
+        equal = (inputvalue === FEtypesArray[2]);        // Test if Quint
+        if(equal){
+        if(packingArray <= 0) {resource.setValue(packingArray + 1);}
+        if(packingArray >= 1) {resource.setValue(packingArray - 1);}}
+  
+        else
+  
+           equal = (inputvalue === FEtypesArray[3]);        // Test if Quint
+           if(equal){
+           if(packingArray <= 0) {resource.setValue(packingArray + 1);}
+           if(packingArray >= 1) {resource.setValue(packingArray - 1);}}
+  
+           else
+  
+              equal = (inputvalue === FEtypesArray[4]);          // Test if Quint
+              if(equal){
+              if(packingArray <= 0) {resource.setValue(packingArray + 1);}
+              if(packingArray >= 1) {resource.setValue(packingArray - 1);}}
+  
+              else
+  
+                 equal = (inputvalue === FEtypesArray[5]);            // Test if Quint
+                 if(equal){
+                 if(packingArray <= 0) {resource.setValue(packingArray + 1);}
+                 if(packingArray >= 1) {resource.setValue(packingArray - 1);}}
+  
+ else
+  
+    equal = (inputvalue === FEtypesArray[6]); // test if triplex
+    if(equal){
+    if(packingArray2 <= 0) {resource.setValue(packingArray2 + 1);}
+    if(packingArray2 >= 1) {resource.setValue(packingArray2 - 1);}
+    if(packingArray3 >= 1) {resource.setValue(packingArray3 - 1);}}
+  
+    else
+    
+       equal = (inputvalue === FEtypesArray[7]); // test if triplex
+       if(equal){
+       if(packingArray2 <= 0) {resource.setValue(packingArray2 + 1);}
+       if(packingArray2 >= 1) {resource.setValue(packingArray2 - 1);}
+       if(packingArray3 >= 1) {resource.setValue(packingArray3 - 1);}}
+  
+       else
+    
+          equal = (inputvalue === FEtypesArray[8]); // test if triplex
+          if(equal){
+          if(packingArray2 <= 0) {resource.setValue(packingArray2 + 1);}
+          if(packingArray2 >= 1) {resource.setValue(packingArray2 - 1);}
+          if(packingArray3 >= 1) {resource.setValue(packingArray3 - 1);}}
+  
+          else
+    
+             equal = (inputvalue === FEtypesArray[9]); // test if triplex
+             if(equal){
+             if(packingArray2 <= 0) {resource.setValue(packingArray2 + 1);}
+             if(packingArray2 >= 1) {resource.setValue(packingArray2 - 1);}
+             if(packingArray3 >= 1) {resource.setValue(packingArray3 - 1);}}
+  
+             else
+    
+                equal = (inputvalue === FEtypesArray[10]); // test if triplex
+                if(equal){
+                if(packingArray2 <= 0) {resource.setValue(packingArray2 + 1);}
+                if(packingArray2 >= 1) {resource.setValue(packingArray2 - 1);}
+                if(packingArray3 >= 1) {resource.setValue(packingArray3 - 1);}}
+    
+}
+  

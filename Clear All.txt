@@ -1,0 +1,13 @@
+function clearall() {
+  
+  var ss = SpreadsheetApp.getActive();
+  var resource = ss.getSheetByName('Resource').getRange('Y4:BG4');
+  var resourcevalue = resource.getValue();
+  var input = ss.getSheetByName('Input').getRange('O9:O15');
+  var inputvalue = input.getValue();
+  
+  if(resourcevalue >= 1) {resource.setValue(resourcevalue = 0);}
+  if(resourcevalue <= 0) {resource.setValue(resourcevalue = 0);}
+
+  if(inputvalue >= 1) {input.setValue(inputvalue = 0);}
+  if(inputvalue <= 0) {input.setValue(inputvalue = 0);}}

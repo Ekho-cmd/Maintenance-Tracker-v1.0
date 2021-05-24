@@ -1,0 +1,140 @@
+function valve1inc()
+   {
+   var ss = SpreadsheetApp.getActiveSpreadsheet();
+   var resource = ss.getSheetByName('Resource');
+   var hiddenCount = resource.getRange("Y4");  
+   var hiddenValue = hiddenCount.getValue();
+   var master = [ss, resource, hiddenCount, hiddenValue];
+ 
+     
+     if(hiddenValue <= 0) {hiddenCount.setValue(hiddenValue + 1);}       //set valve select
+     if(hiddenValue >= 1) {hiddenCount.setValue(hiddenValue -1);}
+   }
+
+
+function valve2inc(){
+   var ss = SpreadsheetApp.getActiveSpreadsheet();
+   var resource = ss.getSheetByName('Resource');
+   var hiddenCount = resource.getRange("Z4");  
+   var hiddenValue = hiddenCount.getValue();
+ 
+  if(hiddenValue <= 0) {hiddenCount.setValue(hiddenValue + 1);}
+  if(hiddenValue >= 1) {hiddenCount.setValue(hiddenValue -1);}
+}
+
+
+function valve3inc(){
+   var ss = SpreadsheetApp.getActiveSpreadsheet();
+   var resource = ss.getSheetByName('Resource');
+   var hiddenCount = resource.getRange("AA4");  
+   var hiddenValue = hiddenCount.getValue();
+  
+  if(hiddenValue <= 0) {hiddenCount.setValue(hiddenValue + 1);}
+  if(hiddenValue >= 1) {hiddenCount.setValue(hiddenValue -1);}
+}
+  
+
+
+function valve4inc(){
+   var ss = SpreadsheetApp.getActiveSpreadsheet();
+   var input = ss.getSheetByName('Input');
+   var inputrange = input.getRange('M2');
+   var inputvalue = inputrange.getValue();
+   var resource = ss.getSheetByName('Resource');
+  
+  equal = (input.getRange('M2').getValue() === resource.getRange('GF5:GF10').getValue());
+  
+  if(equal){
+    if(resource.getRange('AB4').getValue() <= 0) {resource.getRange('AB4').setValue(resource.getRange('AB4').getValue() + 1);}
+    else
+    if(resource.getRange('AB4').getValue() >= 1) {resource.getRange('AB4').setValue(resource.getRange('AB4').getValue() - 1);}}
+  
+}    
+
+
+
+
+function valve5inc(){
+   var ss = SpreadsheetApp.getActiveSpreadsheet();
+   var input = ss.getSheetByName('Input');
+   var inputrange = input.getRange('M2');
+   var inputvalue = inputrange.getValue();
+   var resource = ss.getSheetByName('Resource');
+  
+  equal = (input.getRange('M2').getValue() === resource.getRange('GF5:GF10').getValue());
+  
+  if(equal){
+    if(resource.getRange('AC4').getValue() <= 0) {resource.getRange('AC4').setValue(resource.getRange('AC4').getValue() + 1);}
+    else
+    if(resource.getRange('AC4').getValue() >= 1) {resource.getRange('AC4').setValue(resource.getRange('AC4').getValue() - 1);}}
+  
+}    
+
+
+function valve6inc(){
+   var ss = SpreadsheetApp.getActiveSpreadsheet();
+   var resource = ss.getSheetByName('Resource');
+   var hiddenCount = resource.getRange("AD4");  
+   var hiddenValue = hiddenCount.getValue();
+  
+  if(hiddenValue <= 0) {hiddenCount.setValue(hiddenValue + 1);}
+  if(hiddenValue >= 1) {hiddenCount.setValue(hiddenValue -1);}
+}
+
+
+function valve7inc(){
+   var ss = SpreadsheetApp.getActiveSpreadsheet();
+   var resource = ss.getSheetByName('Resource');
+   var hiddenCount = resource.getRange("AE4");  
+   var hiddenValue = hiddenCount.getValue();
+  
+  if(hiddenValue <= 0) {hiddenCount.setValue(hiddenValue + 1);}
+  if(hiddenValue >= 1) {hiddenCount.setValue(hiddenValue -1);}
+}
+
+
+function valve8inc(){
+   var ss = SpreadsheetApp.getActiveSpreadsheet();
+   var resource = ss.getSheetByName('Resource');
+   var hiddenCount = resource.getRange("AF4");  
+   var hiddenValue = hiddenCount.getValue();
+  
+  if(hiddenValue <= 0) {hiddenCount.setValue(hiddenValue + 1);}
+  if(hiddenValue >= 1) {hiddenCount.setValue(hiddenValue -1);}
+}
+
+function valve9inc(){
+   var ss = SpreadsheetApp.getActiveSpreadsheet();
+   var input = ss.getSheetByName('Input');
+   var inputrange = input.getRange('M2');
+   var inputvalue = inputrange.getValue();
+   var resource = ss.getSheetByName('Resource');
+  
+  equal = (input.getRange('M2').getValue() === resource.getRange('GF5:GF10').getValue());
+  
+  if(equal){
+    if(resource.getRange('AG4').getValue() <= 0) {resource.getRange('AG4').setValue(resource.getRange('AG4').getValue() + 1);}
+    else
+    if(resource.getRange('AG4').getValue() >= 1) {resource.getRange('AG4').setValue(resource.getRange('AG4').getValue() - 1);}}
+  
+}    
+
+
+
+function valve10inc(){
+   var ss = SpreadsheetApp.getActiveSpreadsheet();
+   var input = ss.getSheetByName('Input');
+   var inputrange = input.getRange('M2');
+   var inputvalue = inputrange.getValue();
+   var resource = ss.getSheetByName('Resource');
+  
+  equal = (input.getRange('M2').getValue() === resource.getRange('GF5:GF10').getValue());
+  
+  if(equal){
+    if(resource.getRange('AH4').getValue() <= 0) {resource.getRange('AH4').setValue(resource.getRange('AH4').getValue() + 1);}
+    else
+    if(resource.getRange('AH4').getValue() >= 1) {resource.getRange('AH4').setValue(resource.getRange('AH4').getValue() - 1);}}
+  
+}    
+
+  

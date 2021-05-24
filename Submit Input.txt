@@ -1,0 +1,445 @@
+function submit() {submitinput(); submitparts();}
+
+
+function submitinput() {
+  
+  var ss = SpreadsheetApp.getActiveSpreadsheet();
+  var datasheet = ss.getSheetByName('Log');//Log sheet
+  var input = ss.getSheetByName('Input'); //Data entry sheet
+  var inputcell = input.getRange('A2');
+  var select = inputcell.getValue();
+  var resource = ss.getSheetByName('Resource');//Resource sheet
+  var valuecount = ("61");
+  
+  
+   //Input Values
+  var values = [[input.getRange("A2").getValue(),//#1
+                 input.getRange("B2").getValue(),
+                 input.getRange("C2").getValue(),
+                 input.getRange("D2").getValue(),
+                 input.getRange("E2").getValue(),//#5
+                 input.getRange("F2").getValue(),
+                 input.getRange("G2").getValue(),
+                 input.getRange("K2").getValue(),
+                 input.getRange("O2").getValue(),
+                 input.getRange("P2").getValue(),//#10
+                 input.getRange("H2").getValue(),
+                 input.getRange("I2").getValue(),
+                 input.getRange("J2").getValue(),
+                 input.getRange("L2").getValue(),
+                 input.getRange("O4").getValue(),//#15
+                 resource.getRange("S6").getValue(),
+                 input.getRange("N2").getValue(),  
+                 input.getRange("O6").getValue(),
+                 input.getRange("M2").getValue(),
+                 input.getRange("M17").getValue(),// #20
+                 resource.getRange("Y18").getValue(),          //valve 1
+                 resource.getRange("Z18").getValue(),
+                 resource.getRange("AA18").getValue(),
+                 resource.getRange("AB18").getValue(),
+                 resource.getRange("AC18").getValue(),// #25         //valve 5
+                 resource.getRange("AD18").getValue(),
+                 resource.getRange("AE18").getValue(),
+                 resource.getRange("AF18").getValue(),
+                 resource.getRange("AG18").getValue(),
+                 resource.getRange("AH18").getValue(),// #30         //valve 10
+                 resource.getRange("AI18").getValue(),        //carb seat #1
+                 resource.getRange("AJ18").getValue(),
+                 resource.getRange("AK18").getValue(),
+                 resource.getRange("AL18").getValue(),
+                 resource.getRange("AM18").getValue(),// #35        //carb seat #5
+                 resource.getRange("AN18").getValue(),
+                 resource.getRange("AO18").getValue(),
+                 resource.getRange("AP18").getValue(),
+                 resource.getRange("AQ18").getValue(),
+                 resource.getRange("AR18").getValue(),// #40         //carb seat #10
+                 resource.getRange("AS18").getValue(),         //conv seat #1
+                 resource.getRange("AT18").getValue(),
+                 resource.getRange("AU18").getValue(),
+                 resource.getRange("AV18").getValue(),
+                 resource.getRange("AW18").getValue(),// #45         //conv seat #5
+                 resource.getRange("AX18").getValue(),
+                 resource.getRange("AY18").getValue(),
+                 resource.getRange("AZ18").getValue(),
+                 resource.getRange("BA18").getValue(),
+                 resource.getRange("BB18").getValue(),// #50         //conv seat #10
+                 resource.getRange("BC18").getValue(),          //packing 1
+                 resource.getRange("BD18").getValue(),
+                 resource.getRange("BE18").getValue(),
+                 resource.getRange("BF18").getValue(),
+                 resource.getRange("BG18").getValue(),// #55          //packing 5
+                 resource.getRange("CX6").getValue(),           //minimum valve strokes
+                 resource.getRange("CY6").getValue(),           //minimum seat strokes
+                 resource.getRange("CZ6").getValue(),           //minimum packing strokes
+                 resource.getRange("DF6").getValue(),           //strokes at last valve change
+                 resource.getRange("DG6").getValue(),// #60           //strokes at last seat change
+                 resource.getRange("DH6").getValue(),]]; // 61 count    strokes at last packing change
+                
+           
+                
+                if(select == '112012'){
+    datasheet.getRange(datasheet.getLastRow()+1, 1, 1, valuecount).setValues(values);}            
+                
+                 if(select == '112013'){
+    datasheet.getRange(datasheet.getLastRow()+1, 1, 1, valuecount).setValues(values);}
+
+                if(select == '112023'){
+    datasheet.getRange(datasheet.getLastRow()+1, 1, 1, valuecount).setValues(values);}
+
+                if(select == '112074'){
+    datasheet.getRange(datasheet.getLastRow()+1, 1, 1, valuecount).setValues(values);}
+ 
+                if(select == '112077'){
+    datasheet.getRange(datasheet.getLastRow()+1, 1, 1, valuecount).setValues(values);}
+ 
+                if(select == '112082'){
+    datasheet.getRange(datasheet.getLastRow()+1, 1, 1, valuecount).setValues(values);}
+ 
+                if(select == '112083'){
+    datasheet.getRange(datasheet.getLastRow()+1, 1, 1, valuecount).setValues(values)}
+ 
+                if(select == '112101'){
+    datasheet.getRange(datasheet.getLastRow()+1, 1, 1, valuecount).setValues(values)}
+ 
+                if(select == '112105'){
+    datasheet.getRange(datasheet.getLastRow()+1, 1, 1, valuecount).setValues(values)}
+ 
+                if(select == '112156'){
+    datasheet.getRange(datasheet.getLastRow()+1, 1, 1, valuecount).setValues(values)}
+ 
+                if(select == '112157'){
+    datasheet.getRange(datasheet.getLastRow()+1, 1, 1, valuecount).setValues(values)}
+ 
+                if(select == '112161'){
+    datasheet.getRange(datasheet.getLastRow()+1, 1, 1, valuecount).setValues(values)}
+ 
+                if(select == '112162'){
+    datasheet.getRange(datasheet.getLastRow()+1, 1, 1, valuecount).setValues(values)}
+ 
+                if(select == '112169'){
+    datasheet.getRange(datasheet.getLastRow()+1, 1, 1, valuecount).setValues(values)}
+ 
+                if(select == '112170'){
+    datasheet.getRange(datasheet.getLastRow()+1, 1, 1, valuecount).setValues(values)}
+ 
+                if(select == '112171'){
+    datasheet.getRange(datasheet.getLastRow()+1, 1, 1, valuecount).setValues(values)}
+ 
+                if(select == '112172'){
+    datasheet.getRange(datasheet.getLastRow()+1, 1, 1, valuecount).setValues(values)}
+ 
+                if(select == '112182'){
+    datasheet.getRange(datasheet.getLastRow()+1, 1, 1, valuecount).setValues(values)}
+ 
+                if(select == '112198'){
+    datasheet.getRange(datasheet.getLastRow()+1, 1, 1, valuecount).setValues(values)}
+ 
+                if(select == '112223'){
+    datasheet.getRange(datasheet.getLastRow()+1, 1, 1, valuecount).setValues(values)}
+ 
+                if(select == '112224'){
+    datasheet.getRange(datasheet.getLastRow()+1, 1, 1, valuecount).setValues(values)}
+ 
+                if(select == '112225'){
+    datasheet.getRange(datasheet.getLastRow()+1, 1, 1, valuecount).setValues(values)}
+ 
+                if(select == '112226'){
+    datasheet.getRange(datasheet.getLastRow()+1, 1, 1, valuecount).setValues(values)}
+   
+                if(select == '112227'){
+    datasheet.getRange(datasheet.getLastRow()+1, 1, 1, valuecount).setValues(values)}
+ 
+                if(select == '112229'){
+    datasheet.getRange(datasheet.getLastRow()+1, 1, 1, valuecount).setValues(values)}
+ 
+                if(select == '112231'){
+    datasheet.getRange(datasheet.getLastRow()+1, 1, 1, valuecount).setValues(values)}
+ 
+                if(select == '112233'){
+    datasheet.getRange(datasheet.getLastRow()+1, 1, 1, valuecount).setValues(values)}
+ 
+                if(select == '112234'){
+    datasheet.getRange(datasheet.getLastRow()+1, 1, 1, valuecount).setValues(values)}
+ 
+                if(select == '112235'){
+    datasheet.getRange(datasheet.getLastRow()+1, 1, 1, valuecount).setValues(values)}
+ 
+                if(select == '112237'){
+    datasheet.getRange(datasheet.getLastRow()+1, 1, 1, valuecount).setValues(values)}
+ 
+                if(select == '112238'){
+    datasheet.getRange(datasheet.getLastRow()+1, 1, 1, valuecount).setValues(values)}
+ 
+                if(select == '112240'){
+    datasheet.getRange(datasheet.getLastRow()+1, 1, 1, valuecount).setValues(values)}
+ 
+                if(select == '112241'){
+    datasheet.getRange(datasheet.getLastRow()+1, 1, 1, valuecount).setValues(values)}
+ 
+                if(select == '112242'){
+    datasheet.getRange(datasheet.getLastRow()+1, 1, 1, valuecount).setValues(values)}
+ 
+                if(select == '112243'){
+    datasheet.getRange(datasheet.getLastRow()+1, 1, 1, valuecount).setValues(values)}
+ 
+                if(select == '112244'){
+    datasheet.getRange(datasheet.getLastRow()+1, 1, 1, valuecount).setValues(values)}
+ 
+                if(select == '112250'){
+    datasheet.getRange(datasheet.getLastRow()+1, 1, 1, valuecount).setValues(values)}
+ 
+                if(select == '112253'){
+    datasheet.getRange(datasheet.getLastRow()+1, 1, 1, valuecount).setValues(values)}
+ 
+                if(select == '112263'){
+    datasheet.getRange(datasheet.getLastRow()+1, 1, 1, valuecount).setValues(values)}
+ 
+                if(select == '112268'){
+    datasheet.getRange(datasheet.getLastRow()+1, 1, 1, valuecount).setValues(values)}
+ 
+                if(select == '112269'){
+    datasheet.getRange(datasheet.getLastRow()+1, 1, 1, valuecount).setValues(values)}
+ 
+                if(select == '112293'){
+    datasheet.getRange(datasheet.getLastRow()+1, 1, 1, valuecount).setValues(values)}
+ 
+                if(select == '112299'){
+    datasheet.getRange(datasheet.getLastRow()+1, 1, 1, valuecount).setValues(values)}
+ 
+                if(select == '112300'){
+    datasheet.getRange(datasheet.getLastRow()+1, 1, 1, valuecount).setValues(values)}
+ 
+                if(select == '112303'){
+    datasheet.getRange(datasheet.getLastRow()+1, 1, 1, valuecount).setValues(values)}
+ 
+                if(select == '112304'){
+    datasheet.getRange(datasheet.getLastRow()+1, 1, 1, valuecount).setValues(values)}
+ 
+                if(select == '112305'){
+    datasheet.getRange(datasheet.getLastRow()+1, 1, 1, valuecount).setValues(values)}
+ 
+                if(select == '112306'){
+    datasheet.getRange(datasheet.getLastRow()+1, 1, 1, valuecount).setValues(values)}
+ 
+                if(select == '112308'){
+    datasheet.getRange(datasheet.getLastRow()+1, 1, 1, valuecount).setValues(values)}
+ 
+                if(select == '112312'){
+    datasheet.getRange(datasheet.getLastRow()+1, 1, 1, valuecount).setValues(values)}
+ 
+                if(select == '112320'){
+    datasheet.getRange(datasheet.getLastRow()+1, 1, 1, valuecount).setValues(values)}
+ 
+                if(select == '112321'){
+    datasheet.getRange(datasheet.getLastRow()+1, 1, 1, valuecount).setValues(values)}
+ 
+                if(select == '112323'){
+    datasheet.getRange(datasheet.getLastRow()+1, 1, 1, valuecount).setValues(values)}
+ 
+                if(select == '112325'){
+    datasheet.getRange(datasheet.getLastRow()+1, 1, 1, valuecount).setValues(values)}
+ 
+                if(select == '112348'){
+    datasheet.getRange(datasheet.getLastRow()+1, 1, 1, valuecount).setValues(values)}
+ 
+                if(select == '112349'){
+    datasheet.getRange(datasheet.getLastRow()+1, 1, 1, valuecount).setValues(values)}
+ 
+                if(select == '112350'){
+    datasheet.getRange(datasheet.getLastRow()+1, 1, 1, valuecount).setValues(values)}
+ 
+                if(select == '112351'){
+    datasheet.getRange(datasheet.getLastRow()+1, 1, 1, valuecount).setValues(values)}
+ 
+                if(select == '112352'){
+    datasheet.getRange(datasheet.getLastRow()+1, 1, 1, valuecount).setValues(values)}
+ 
+                if(select == '112353'){
+    datasheet.getRange(datasheet.getLastRow()+1, 1, 1, valuecount).setValues(values)}
+ 
+                if(select == '112354'){
+    datasheet.getRange(datasheet.getLastRow()+1, 1, 1, valuecount).setValues(values)}
+ 
+                if(select == '112355'){
+    datasheet.getRange(datasheet.getLastRow()+1, 1, 1, valuecount).setValues(values)}
+ 
+                if(select == '112364'){
+    datasheet.getRange(datasheet.getLastRow()+1, 1, 1, valuecount).setValues(values)}
+ 
+                if(select == '112366'){
+    datasheet.getRange(datasheet.getLastRow()+1, 1, 1, valuecount).setValues(values)}
+ 
+                if(select == '112369'){
+    datasheet.getRange(datasheet.getLastRow()+1, 1, 1, valuecount).setValues(values)}
+ 
+                if(select == '112375'){
+    datasheet.getRange(datasheet.getLastRow()+1, 1, 1, valuecount).setValues(values)}
+ 
+                if(select == '112376'){
+    datasheet.getRange(datasheet.getLastRow()+1, 1, 1, valuecount).setValues(values)}
+ 
+                if(select == '112381'){
+    datasheet.getRange(datasheet.getLastRow()+1, 1, 1, valuecount).setValues(values)}
+ 
+                if(select == '112383'){
+    datasheet.getRange(datasheet.getLastRow()+1, 1, 1, valuecount).setValues(values)}
+ 
+                if(select == '112385'){
+    datasheet.getRange(datasheet.getLastRow()+1, 1, 1, valuecount).setValues(values)}
+ 
+                if(select == '112387'){
+    datasheet.getRange(datasheet.getLastRow()+1, 1, 1, valuecount).setValues(values)}
+ 
+                if(select == '112388'){
+    datasheet.getRange(datasheet.getLastRow()+1, 1, 1, valuecount).setValues(values)}
+ 
+                if(select == '112393'){
+    datasheet.getRange(datasheet.getLastRow()+1, 1, 1, valuecount).setValues(values)}
+ 
+                if(select == '112395'){
+    datasheet.getRange(datasheet.getLastRow()+1, 1, 1, valuecount).setValues(values)}
+ 
+                if(select == '112403'){
+    datasheet.getRange(datasheet.getLastRow()+1, 1, 1, valuecount).setValues(values)}
+ 
+                if(select == '112404'){
+    datasheet.getRange(datasheet.getLastRow()+1, 1, 1, valuecount).setValues(values)}
+ 
+                if(select == '112407'){
+    datasheet.getRange(datasheet.getLastRow()+1, 1, 1, valuecount).setValues(values)}
+ 
+                if(select == '112409'){
+    datasheet.getRange(datasheet.getLastRow()+1, 1, 1, valuecount).setValues(values)}
+ 
+                if(select == '112410'){
+    datasheet.getRange(datasheet.getLastRow()+1, 1, 1, valuecount).setValues(values)}
+ 
+                if(select == '112413'){
+    datasheet.getRange(datasheet.getLastRow()+1, 1, 1, valuecount).setValues(values)}
+ 
+                if(select == '112428'){
+    datasheet.getRange(datasheet.getLastRow()+1, 1, 1, valuecount).setValues(values)}
+ 
+                if(select == '112429'){
+    datasheet.getRange(datasheet.getLastRow()+1, 1, 1, valuecount).setValues(values)}
+ 
+                if(select == '112434'){
+    datasheet.getRange(datasheet.getLastRow()+1, 1, 1, valuecount).setValues(values)}
+ 
+                if(select == '112439'){
+    datasheet.getRange(datasheet.getLastRow()+1, 1, 1, valuecount).setValues(values)}
+ 
+                if(select == '112441'){
+    datasheet.getRange(datasheet.getLastRow()+1, 1, 1, valuecount).setValues(values)}
+ 
+                if(select == '112447'){
+    datasheet.getRange(datasheet.getLastRow()+1, 1, 1, valuecount).setValues(values)}
+ 
+                if(select == '112448'){
+    datasheet.getRange(datasheet.getLastRow()+1, 1, 1, valuecount).setValues(values)}
+ 
+                if(select == '112457'){
+    datasheet.getRange(datasheet.getLastRow()+1, 1, 1, valuecount).setValues(values)}
+ 
+                if(select == '112458'){
+    datasheet.getRange(datasheet.getLastRow()+1, 1, 1, valuecount).setValues(values)}
+ 
+                if(select == '112459'){
+    datasheet.getRange(datasheet.getLastRow()+1, 1, 1, valuecount).setValues(values)}
+ 
+                if(select == '112460'){
+    datasheet.getRange(datasheet.getLastRow()+1, 1, 1, valuecount).setValues(values)}
+ 
+                if(select == '112461'){
+    datasheet.getRange(datasheet.getLastRow()+1, 1, 1, valuecount).setValues(values)}
+ 
+                if(select == '112525'){
+    datasheet.getRange(datasheet.getLastRow()+1, 1, 1, valuecount).setValues(values)}
+ 
+                if(select == '112546'){
+    datasheet.getRange(datasheet.getLastRow()+1, 1, 1, valuecount).setValues(values)}
+ 
+                if(select == '112547'){
+    datasheet.getRange(datasheet.getLastRow()+1, 1, 1, valuecount).setValues(values)}
+ 
+                if(select == '112548'){
+    datasheet.getRange(datasheet.getLastRow()+1, 1, 1, valuecount).setValues(values)}
+ 
+                if(select == '112549'){
+    datasheet.getRange(datasheet.getLastRow()+1, 1, 1, valuecount).setValues(values)}
+ 
+                if(select == '112562'){
+    datasheet.getRange(datasheet.getLastRow()+1, 1, 1, valuecount).setValues(values)}
+ 
+                if(select == '112563'){
+    datasheet.getRange(datasheet.getLastRow()+1, 1, 1, valuecount).setValues(values)}
+ 
+                if(select == '112564'){
+    datasheet.getRange(datasheet.getLastRow()+1, 1, 1, valuecount).setValues(values)}
+ 
+                if(select == '112565'){
+    datasheet.getRange(datasheet.getLastRow()+1, 1, 1, valuecount).setValues(values)}
+ 
+                if(select == '112566'){
+    datasheet.getRange(datasheet.getLastRow()+1, 1, 1, valuecount).setValues(values)}
+ 
+                if(select == '112567'){
+    datasheet.getRange(datasheet.getLastRow()+1, 1, 1, valuecount).setValues(values)}
+ 
+                if(select == '112568'){
+    datasheet.getRange(datasheet.getLastRow()+1, 1, 1, valuecount).setValues(values)}
+ 
+                if(select == '112569'){
+    datasheet.getRange(datasheet.getLastRow()+1, 1, 1, valuecount).setValues(values)}
+ 
+                if(select == '112572'){
+    datasheet.getRange(datasheet.getLastRow()+1, 1, 1, valuecount).setValues(values)}
+ 
+                if(select == '112578'){
+    datasheet.getRange(datasheet.getLastRow()+1, 1, 1, valuecount).setValues(values)}
+ 
+                if(select == '112579'){
+    datasheet.getRange(datasheet.getLastRow()+1, 1, 1, valuecount).setValues(values)}
+ 
+                if(select == '112581'){
+    datasheet.getRange(datasheet.getLastRow()+1, 1, 1, valuecount).setValues(values)}
+ 
+                if(select == '112584'){
+    datasheet.getRange(datasheet.getLastRow()+1, 1, 1, valuecount).setValues(values)}
+ 
+                if(select == '112585'){
+    datasheet.getRange(datasheet.getLastRow()+1, 1, 1, valuecount).setValues(values)}
+ 
+                if(select == '112590'){
+    datasheet.getRange(datasheet.getLastRow()+1, 1, 1, valuecount).setValues(values)}
+ 
+                if(select == '112591'){
+    datasheet.getRange(datasheet.getLastRow()+1, 1, 1, valuecount).setValues(values)}
+ 
+                if(select == '112593'){
+    datasheet.getRange(datasheet.getLastRow()+1, 1, 1, valuecount).setValues(values)}
+ 
+                if(select == '112592'){
+    datasheet.getRange(datasheet.getLastRow()+1, 1, 1, valuecount).setValues(values)}
+ 
+                if(select == '112594'){
+    datasheet.getRange(datasheet.getLastRow()+1, 1, 1, valuecount).setValues(values)}
+ 
+                if(select == '112616'){
+    datasheet.getRange(datasheet.getLastRow()+1, 1, 1, valuecount).setValues(values)}
+ 
+                if(select == '112617'){
+    datasheet.getRange(datasheet.getLastRow()+1, 1, 1, valuecount).setValues(values)}
+ 
+                if(select == '112618'){
+    datasheet.getRange(datasheet.getLastRow()+1, 1, 1, valuecount).setValues(values)}
+ 
+                if(select == '112619'){
+    datasheet.getRange(datasheet.getLastRow()+1, 1, 1, valuecount).setValues(values)}
+                }
+                                   
+                
+
+               
+  
+

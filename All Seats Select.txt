@@ -1,0 +1,313 @@
+
+  
+ /////////////////////////////////////////////////////////////////////////////////////////////////////////////  all seats for Quint and Carbide 
+ function allseats(){
+   var ss = SpreadsheetApp.getActiveSpreadsheet();
+   var resource = ss.getSheetByName('Resource');
+   var allcarbide = resource.getRange("AI4:AR4"); // all carbide seats
+   var allcarbidevalues = allcarbide.getValue();
+   var allconventional = resource.getRange('AS4:BB4'); // all conventional seats
+   var allconventionalvalues = allconventional.getValue();
+   var inputFEcell = ss.getSheetByName('Input').getRange('M2');
+   var inputFEcellvalue = inputFEcell.getValue();
+   var inputSeatcell = ss.getSheetByName('Input').getRange('N2');
+   var inputSeatcellvalue = inputSeatcell.getValue();
+   
+   var topcarbide = resource.getRange("AI4:AK4"); 
+   var topcarbidevalues = topcarbide.getValue();
+   var bottomcarbide = resource.getRange('AN4:AP4');
+   var bottomcarbidevalues = bottomcarbide.getValue();
+   var topdowncarbide = resource.getRange('AL4:AM4');
+   var topdowncarbidevalues = topdowncarbide.getValue();
+   var bottomdowncarbide = resource.getRange('AQ4:AR4');
+   var bottomdowncarbidevalues = bottomdowncarbide.getValue();
+   
+   var topconventional = resource.getRange("AS4:AU4"); 
+   var topconventionalvalues = topconventional.getValue();
+   var bottomconventional = resource.getRange('AX4:AZ4');
+   var bottomconventionalvalues = bottomconventional.getValue();
+   var topdownconventional = resource.getRange('AV4:AW4');
+   var topdownconventionalvalues = topdownconventional.getValue();
+   var bottomdownconventional = resource.getRange('BA4:BB4');
+   var bottomdownconventionalvalues = bottomdownconventional.getValue();
+   
+   var masterArray = [[resource, allcarbide, allconventional, inputFEcell, inputSeatcell, topcarbide, bottomcarbide, topdowncarbide, bottomdowncarbide, topconventional, bottomconventional, topdownconventional, bottomdownconventional]];
+   var quintseatArray = ['FMC Quint 4.5', 'GD Quint FMC Clone 4.5', 'GD Quint SPM Clone 4.5', 'SPM Quint 4.5', 'GD Quint SPM Clone 4.0', 'SPM Quint 4.0'];
+   var triplexseatArray = ['FMC Tri 5.0', 'GD Tri 5.0', 'SPM Tri 5.0', 'GD TRI SPM Clone 4.5', 'SPM Tri 4.5'];
+  
+   
+     equal = (inputFEcell.getValue() === quintseatArray[0]); //test if Quint
+  if(equal){
+     equal = (inputSeatcell.getValue() === resource.getRange('T6').getValue()); //test if carbide
+  if(equal){
+  if(allcarbidevalues <= 0) {allcarbide.setValue(allcarbidevalues + 1);}
+  if(allcarbidevalues >= 1) {allcarbide.setValue(allcarbidevalues - 1);}
+  if(allconventionalvalues >= 1) {allconventional.setValue(allconventionalvalues - 1);}}}
+
+     else
+     
+        equal = (inputFEcell.getValue() === quintseatArray[1]); //test if Quint
+     if(equal){
+        equal = (inputSeatcell.getValue() === resource.getRange('T6').getValue()); //test if carbide
+     if(equal){
+     if(allcarbidevalues <= 0) {allcarbide.setValue(allcarbidevalues + 1);}
+     if(allcarbidevalues >= 1) {allcarbide.setValue(allcarbidevalues - 1);}
+     if(allconventionalvalues >= 1) {allconventional.setValue(allconventionalvalues - 1);}}}
+
+        else
+     
+           equal = (inputFEcell.getValue() === quintseatArray[2]); //test if Quint
+        if(equal){
+           equal = (inputSeatcell.getValue() === resource.getRange('T6').getValue()); //test if carbide
+        if(equal){
+        if(allcarbidevalues <= 0) {allcarbide.setValue(allcarbidevalues + 1);}
+        if(allcarbidevalues >= 1) {allcarbide.setValue(allcarbidevalues - 1);}
+        if(allconventionalvalues >= 1) {allconventional.setValue(allconventionalvalues - 1);}}}
+
+           else
+     
+              equal = (inputFEcell.getValue() === quintseatArray[3]); //test if Quint
+           if(equal){
+              equal = (inputSeatcell.getValue() === resource.getRange('T6').getValue()); //test if carbide
+           if(equal){
+           if(allcarbidevalues <= 0) {allcarbide.setValue(allcarbidevalues + 1);}
+           if(allcarbidevalues >= 1) {allcarbide.setValue(allcarbidevalues - 1);}
+           if(allconventionalvalues >= 1) {allconventional.setValue(allconventionalvalues - 1);}}}
+
+              else
+     
+                 equal = (inputFEcell.getValue() === quintseatArray[4]); //test if Quint
+              if(equal){
+                 equal = (inputSeatcell.getValue() === resource.getRange('T6').getValue()); //test if carbide
+              if(equal){
+              if(allcarbidevalues <= 0) {allcarbide.setValue(allcarbidevalues + 1);}
+              if(allcarbidevalues >= 1) {allcarbide.setValue(allcarbidevalues - 1);}
+              if(allconventionalvalues >= 1) {allconventional.setValue(allconventionalvalues - 1);}}}
+
+                 else
+     
+                    equal = (inputFEcell.getValue() === quintseatArray[5]); //test if Quint
+                 if(equal){
+                    equal = (inputSeatcell.getValue() === resource.getRange('T6').getValue()); //test if carbide
+                 if(equal){
+                 if(allcarbidevalues <= 0) {allcarbide.setValue(allcarbidevalues + 1);}
+                 if(allcarbidevalues >= 1) {allcarbide.setValue(allcarbidevalues - 1);}
+                 if(allconventionalvalues >= 1) {allconventional.setValue(allconventionalvalues - 1);}}}
+
+ else
+  
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////   all seats for Triplex and Carbide
+
+    equal = (inputFEcell.getValue() === triplexseatArray[0]); //test if Triplex
+ if(equal){
+    equal = (inputSeatcell.getValue() === resource.getRange('T6').getValue()); //test if carbide
+ if(equal){
+ if(topcarbidevalues <= 0) {topcarbide.setValue(topcarbidevalues + 1);}
+ if(topcarbidevalues >= 1) {topcarbide.setValue(topcarbidevalues - 1);}
+ if(bottomcarbidevalues <= 0) {bottomcarbide.setValue(bottomcarbidevalues + 1);}
+ if(bottomcarbidevalues >= 1) {bottomcarbide.setValue(bottomcarbidevalues - 1);}
+      
+ if(topdowncarbidevalues >= 1) {topdowncarbide.setValue(topdowncarbidevalues - 1);}
+ if(bottomdowncarbidevalues >= 1) {bottomdowncarbide.setValue(bottomdowncarbidevalues - 1);}
+ if(allconventionalvalues >= 1) {allconventional.setValue(allconventionalvalues -1);}}}
+  
+    else
+     
+       equal = (inputFEcell.getValue() === triplexseatArray[1]); //test if Triplex
+    if(equal){
+       equal = (inputSeatcell.getValue() === resource.getRange('T6').getValue()); //test if carbide
+    if(equal){
+    if(topcarbidevalues <= 0) {topcarbide.setValue(topcarbidevalues + 1);}
+    if(topcarbidevalues >= 1) {topcarbide.setValue(topcarbidevalues - 1);}
+    if(bottomcarbidevalues <= 0) {bottomcarbide.setValue(bottomcarbidevalues + 1);}
+    if(bottomcarbidevalues >= 1) {bottomcarbide.setValue(bottomcarbidevalues - 1);}
+      
+    if(topdowncarbidevalues >= 1) {topdowncarbide.setValue(topdowncarbidevalues - 1);}
+    if(bottomdowncarbidevalues >= 1) {bottomdowncarbide.setValue(bottomdowncarbidevalues - 1);}
+    if(allconventionalvalues >= 1) {allconventional.setValue(allconventionalvalues -1);}}}
+  
+       else
+     
+          equal = (inputFEcell.getValue() === triplexseatArray[2]); //test if Triplex
+       if(equal){
+          equal = (inputSeatcell.getValue() === resource.getRange('T6').getValue()); //test if carbide
+       if(equal){
+       if(topcarbidevalues <= 0) {topcarbide.setValue(topcarbidevalues + 1);}
+       if(topcarbidevalues >= 1) {topcarbide.setValue(topcarbidevalues - 1);}
+       if(bottomcarbidevalues <= 0) {bottomcarbide.setValue(bottomcarbidevalues + 1);}
+       if(bottomcarbidevalues >= 1) {bottomcarbide.setValue(bottomcarbidevalues - 1);}
+      
+       if(topdowncarbidevalues >= 1) {topdowncarbide.setValue(topdowncarbidevalues - 1);}
+       if(bottomdowncarbidevalues >= 1) {bottomdowncarbide.setValue(bottomdowncarbidevalues - 1);}
+       if(allconventionalvalues >= 1) {allconventional.setValue(allconventionalvalues -1);}}}
+  
+          else
+     
+             equal = (inputFEcell.getValue() === triplexseatArray[3]); //test if Triplex
+          if(equal){
+             equal = (inputSeatcell.getValue() === resource.getRange('T6').getValue()); //test if carbide
+          if(equal){
+          if(topcarbidevalues <= 0) {topcarbide.setValue(topcarbidevalues + 1);}
+          if(topcarbidevalues >= 1) {topcarbide.setValue(topcarbidevalues - 1);}
+          if(bottomcarbidevalues <= 0) {bottomcarbide.setValue(bottomcarbidevalues + 1);}
+          if(bottomcarbidevalues >= 1) {bottomcarbide.setValue(bottomcarbidevalues - 1);}
+      
+          if(topdowncarbidevalues >= 1) {topdowncarbide.setValue(topdowncarbidevalues - 1);}
+          if(bottomdowncarbidevalues >= 1) {bottomdowncarbide.setValue(bottomdowncarbidevalues - 1);}
+          if(allconventionalvalues >= 1) {allconventional.setValue(allconventionalvalues -1);}}}
+  
+             else
+     
+                equal = (inputFEcell.getValue() === triplexseatArray[4]); //test if Triplex
+             if(equal){
+                equal = (inputSeatcell.getValue() === resource.getRange('T6').getValue()); //test if carbide
+             if(equal){
+             if(topcarbidevalues <= 0) {topcarbide.setValue(topcarbidevalues + 1);}
+             if(topcarbidevalues >= 1) {topcarbide.setValue(topcarbidevalues - 1);}
+             if(bottomcarbidevalues <= 0) {bottomcarbide.setValue(bottomcarbidevalues + 1);}
+             if(bottomcarbidevalues >= 1) {bottomcarbide.setValue(bottomcarbidevalues - 1);}
+      
+             if(topdowncarbidevalues >= 1) {topdowncarbide.setValue(topdowncarbidevalues - 1);}
+             if(bottomdowncarbidevalues >= 1) {bottomdowncarbide.setValue(bottomdowncarbidevalues - 1);}
+             if(allconventionalvalues >= 1) {allconventional.setValue(allconventionalvalues -1);}}}
+  
+   else
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////  all seats for Quint and conventional 
+
+      equal = (inputFEcell.getValue() === quintseatArray[0]); //test if Quint
+   if(equal){
+      equal = (inputSeatcell.getValue() === resource.getRange('T7').getValue()); //test if conventional
+   if(equal){
+   if(allconventionalvalues <= 0) {allconventional.setValue(allconventionalvalues + 1);}
+   if(allconventionalvalues >= 1) {allconventional.setValue(allconventionalvalues - 1);}
+   if(allcarbidevalues >= 1) {allcarbide.setValue(allcarbidevalues - 1);}}}
+
+      else
+    
+         equal = (inputFEcell.getValue() === quintseatArray[1]); //test if Quint
+      if(equal){
+         equal = (inputSeatcell.getValue() === resource.getRange('T7').getValue()); //test if conventional
+      if(equal){
+      if(allconventionalvalues <= 0) {allconventional.setValue(allconventionalvalues + 1);}
+      if(allconventionalvalues >= 1) {allconventional.setValue(allconventionalvalues - 1);}
+      if(allcarbidevalues >= 1) {allcarbide.setValue(allcarbidevalues - 1);}}}
+
+         else
+    
+            equal = (inputFEcell.getValue() === quintseatArray[2]); //test if Quint
+         if(equal){
+            equal = (inputSeatcell.getValue() === resource.getRange('T7').getValue()); //test if conventional
+         if(equal){
+         if(allconventionalvalues <= 0) {allconventional.setValue(allconventionalvalues + 1);}
+         if(allconventionalvalues >= 1) {allconventional.setValue(allconventionalvalues - 1);}
+         if(allcarbidevalues >= 1) {allcarbide.setValue(allcarbidevalues - 1);}}}
+
+            else
+    
+               equal = (inputFEcell.getValue() === quintseatArray[3]); //test if Quint
+            if(equal){
+               equal = (inputSeatcell.getValue() === resource.getRange('T7').getValue()); //test if conventional
+            if(equal){
+            if(allconventionalvalues <= 0) {allconventional.setValue(allconventionalvalues + 1);}
+            if(allconventionalvalues >= 1) {allconventional.setValue(allconventionalvalues - 1);}
+            if(allcarbidevalues >= 1) {allcarbide.setValue(allcarbidevalues - 1);}}}
+
+               else
+    
+                  equal = (inputFEcell.getValue() === quintseatArray[4]); //test if Quint
+               if(equal){
+                  equal = (inputSeatcell.getValue() === resource.getRange('T7').getValue()); //test if conventional
+               if(equal){
+               if(allconventionalvalues <= 0) {allconventional.setValue(allconventionalvalues + 1);}
+               if(allconventionalvalues >= 1) {allconventional.setValue(allconventionalvalues - 1);}
+               if(allcarbidevalues >= 1) {allcarbide.setValue(allcarbidevalues - 1);}}}
+
+                  else
+    
+                     equal = (inputFEcell.getValue() === quintseatArray[5]); //test if Quint
+                  if(equal){
+                     equal = (inputSeatcell.getValue() === resource.getRange('T7').getValue()); //test if conventional
+                  if(equal){
+                  if(allconventionalvalues <= 0) {allconventional.setValue(allconventionalvalues + 1);}
+                  if(allconventionalvalues >= 1) {allconventional.setValue(allconventionalvalues - 1);}
+                  if(allcarbidevalues >= 1) {allcarbide.setValue(allcarbidevalues - 1);}}}
+
+  else
+  
+  //////////////////////////////////////////////////////////////////////////////////////////////////////////////   all seats for Triplex and conventional
+
+   equal = (inputFEcell.getValue() === triplexseatArray[0]); //test if Triplex
+if(equal){
+   equal = (inputSeatcell.getValue() === resource.getRange('T7').getValue()); //test if conventional
+if(equal){
+if(topconventionalvalues <= 0) {topconventional.setValue(topconventionalvalues + 1);}
+if(topconventionalvalues >= 1) {topconventional.setValue(topconventionalvalues - 1);}
+if(bottomconventionalvalues <= 0) {bottomconventional.setValue(bottomconventionalvalues + 1);}
+if(bottomconventionalvalues >= 1) {bottomconventional.setValue(bottomconventionalvalues - 1);}
+      
+if(topdownconventionalvalues >= 1) {topdownconventional.setValue(topdownconventionalvalues - 1);}
+if(bottomdownconventionalvalues >= 1) {bottomdownconventional.setValue(bottomdownconventionalvalues - 1);}
+if(allcarbidevalues >= 1) {allcarbide.setValue(allcarbidevalues - 1);}}}
+   
+   else
+   
+      equal = (inputFEcell.getValue() === triplexseatArray[1]); //test if Triplex
+   if(equal){
+      equal = (inputSeatcell.getValue() === resource.getRange('T7').getValue()); //test if conventional
+   if(equal){
+   if(topconventionalvalues <= 0) {topconventional.setValue(topconventionalvalues + 1);}
+   if(topconventionalvalues >= 1) {topconventional.setValue(topconventionalvalues - 1);}
+   if(bottomconventionalvalues <= 0) {bottomconventional.setValue(bottomconventionalvalues + 1);}
+   if(bottomconventionalvalues >= 1) {bottomconventional.setValue(bottomconventionalvalues - 1);}
+      
+   if(topdownconventionalvalues >= 1) {topdownconventional.setValue(topdownconventionalvalues - 1);}
+   if(bottomdownconventionalvalues >= 1) {bottomdownconventional.setValue(bottomdownconventionalvalues - 1);}
+   if(allcarbidevalues >= 1) {allcarbide.setValue(allcarbidevalues - 1);}}}
+   
+      else
+   
+         equal = (inputFEcell.getValue() === triplexseatArray[2]); //test if Triplex
+      if(equal){
+         equal = (inputSeatcell.getValue() === resource.getRange('T7').getValue()); //test if conventional
+      if(equal){
+      if(topconventionalvalues <= 0) {topconventional.setValue(topconventionalvalues + 1);}
+      if(topconventionalvalues >= 1) {topconventional.setValue(topconventionalvalues - 1);}
+      if(bottomconventionalvalues <= 0) {bottomconventional.setValue(bottomconventionalvalues + 1);}
+      if(bottomconventionalvalues >= 1) {bottomconventional.setValue(bottomconventionalvalues - 1);}
+      
+      if(topdownconventionalvalues >= 1) {topdownconventional.setValue(topdownconventionalvalues - 1);}
+      if(bottomdownconventionalvalues >= 1) {bottomdownconventional.setValue(bottomdownconventionalvalues - 1);}
+      if(allcarbidevalues >= 1) {allcarbide.setValue(allcarbidevalues - 1);}}}
+   
+         else
+    
+            equal = (inputFEcell.getValue() === triplexseatArray[3]); //test if Triplex
+         if(equal){
+            equal = (inputSeatcell.getValue() === resource.getRange('T7').getValue()); //test if conventional
+         if(equal){
+         if(topconventionalvalues <= 0) {topconventional.setValue(topconventionalvalues + 1);}
+         if(topconventionalvalues >= 1) {topconventional.setValue(topconventionalvalues - 1);}
+         if(bottomconventionalvalues <= 0) {bottomconventional.setValue(bottomconventionalvalues + 1);}
+         if(bottomconventionalvalues >= 1) {bottomconventional.setValue(bottomconventionalvalues - 1);}
+      
+         if(topdownconventionalvalues >= 1) {topdownconventional.setValue(topdownconventionalvalues - 1);}
+         if(bottomdownconventionalvalues >= 1) {bottomdownconventional.setValue(bottomdownconventionalvalues - 1);}
+         if(allcarbidevalues >= 1) {allcarbide.setValue(allcarbidevalues - 1);}}}
+   
+            else
+    
+               equal = (inputFEcell.getValue() === triplexseatArray[4]); //test if Triplex
+            if(equal){
+               equal = (inputSeatcell.getValue() === resource.getRange('T7').getValue()); //test if conventional
+            if(equal){
+            if(topconventionalvalues <= 0) {topconventional.setValue(topconventionalvalues + 1);}
+            if(topconventionalvalues >= 1) {topconventional.setValue(topconventionalvalues - 1);}
+            if(bottomconventionalvalues <= 0) {bottomconventional.setValue(bottomconventionalvalues + 1);}
+            if(bottomconventionalvalues >= 1) {bottomconventional.setValue(bottomconventionalvalues - 1);}
+      
+            if(topdownconventionalvalues >= 1) {topdownconventional.setValue(topdownconventionalvalues - 1);}
+            if(bottomdownconventionalvalues >= 1) {bottomdownconventional.setValue(bottomdownconventionalvalues - 1);}
+            if(allcarbidevalues >= 1) {allcarbide.setValue(allcarbidevalues - 1);}}}
+   
+}
+   

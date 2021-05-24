@@ -1,0 +1,124 @@
+  
+ function allvalves(){
+   var ss = SpreadsheetApp.getActiveSpreadsheet();
+   var resource = ss.getSheetByName('Resource');
+   var allvalves = resource.getRange("Y4:AH4"); 
+   var inputFEcell = ss.getSheetByName('Input').getRange('M2');
+   var allvalves1 = resource.getRange("Y4:AA4"); 
+   var allvalves2 = resource.getRange('AD4:AF4');
+   var tridowncount1 = resource.getRange('AB4:AC4');
+   var tridowncount2 = resource.getRange('AG4:AH4');
+   var quintvalveArray = ['FMC Quint 4.5', 'GD Quint FMC Clone 4.5', 'GD Quint SPM Clone 4.5', 'SPM Quint 4.5','GD Quint SPM Clone 4.0', 'SPM Quint 4.0'];
+   var triplexvalveArray = ['FMC Tri 5.0', 'GD Tri 5.0', 'SPM Tri 5.0', 'GD TRI SPM Clone 4.5', 'SPM Tri 4.5'];
+   var valveArray = allvalves.getValue();
+   var Array123 = allvalves1.getValue();
+   var Array678 = allvalves2.getValue();
+   var Array45 = tridowncount1.getValue();
+   var Array910 = tridowncount2.getValue();
+   
+   /////////////////////////////////////////////////////////////////////////////////////////////////////////////  all valves for Quint 
+
+    equal = (inputFEcell.getValue() === quintvalveArray[0]); //test if Quint
+    if(equal){
+    if(valveArray <= 0) {allvalves.setValue(valveArray + 1);}
+    if(valveArray >= 1) {allvalves.setValue(valveArray - 1);}}
+  
+    else
+  
+       equal = (inputFEcell.getValue() === quintvalveArray[1]); //test if Quint
+       if(equal){
+       if(valveArray <= 0) {allvalves.setValue(valveArray + 1);}
+       if(valveArray >= 1) {allvalves.setValue(valveArray - 1);}}
+
+       else  
+  
+          equal = (inputFEcell.getValue() === quintvalveArray[2]); //test if Quint
+          if(equal){
+          if(valveArray <= 0) {allvalves.setValue(valveArray + 1);}
+          if(valveArray >= 1) {allvalves.setValue(valveArray - 1);}}
+
+          else  
+  
+             equal = (inputFEcell.getValue() === quintvalveArray[3]); //test if Quint
+             if(equal){
+             if(valveArray <= 0) {allvalves.setValue(valveArray + 1);}
+             if(valveArray >= 1) {allvalves.setValue(valveArray - 1);}}
+
+             else  
+  
+                equal = (inputFEcell.getValue() === quintvalveArray[4]); //test if Quint
+                if(equal){
+                if(valveArray <= 0) {allvalves.setValue(valveArray + 1);}
+                if(valveArray >= 1) {allvalves.setValue(valveArray - 1);}}
+
+                else  
+  
+                   equal = (inputFEcell.getValue() === quintvalveArray[5]); //test if Quint
+                   if(equal){
+                   if(valveArray <= 0) {allvalves.setValue(valveArray + 1);}
+                   if(valveArray >= 1) {allvalves.setValue(valveArray - 1);}}
+
+    else  
+  
+  //////////////////////////////////////////////////////////////////////////////////////////////////////////////   all valves for Triplex 5"
+
+   equal = (inputFEcell.getValue() === triplexvalveArray[0]); //test if triplex
+   if(equal){
+   if(Array123 <= 0) {allvalves1.setValue(Array123 + 1);}
+   if(Array123 >= 1) {allvalves1.setValue(Array123 - 1);}
+   if(Array678 <= 0) {allvalves2.setValue(Array678 + 1);}
+   if(Array678 >= 1) {allvalves2.setValue(Array678 - 1);}
+   
+   if(Array45 >= 1) {tridowncount1.setValue(Array45 - 1);}
+   if(Array910 >= 1) {tridowncount2.setValue(Array910 - 1);}}
+    
+   else
+   
+      equal = (inputFEcell.getValue() === triplexvalveArray[1]); //test if triplex
+      if(equal){
+      if(Array123 <= 0) {allvalves1.setValue(Array123 + 1);}
+      if(Array123 >= 1) {allvalves1.setValue(Array123 - 1);}
+      if(Array678 <= 0) {allvalves2.setValue(Array678 + 1);}
+      if(Array678 >= 1) {allvalves2.setValue(Array678 - 1);}
+   
+      if(Array45 >= 1) {tridowncount1.setValue(Array45 - 1);}
+      if(Array910 >= 1) {tridowncount2.setValue(Array910 - 1);}}
+    
+      else
+  
+         equal = (inputFEcell.getValue() === triplexvalveArray[2]); //test if triplex
+         if(equal){
+         if(Array123 <= 0) {allvalves1.setValue(Array123 + 1);}
+         if(Array123 >= 1) {allvalves1.setValue(Array123 - 1);}
+         if(Array678 <= 0) {allvalves2.setValue(Array678 + 1);}
+         if(Array678 >= 1) {allvalves2.setValue(Array678 - 1);}
+   
+         if(Array45 >= 1) {tridowncount1.setValue(Array45 - 1);}
+         if(Array910 >= 1) {tridowncount2.setValue(Array910 - 1);}}
+    
+         else
+    
+            equal = (inputFEcell.getValue() === triplexvalveArray[3]); //test if triplex
+            if(equal){
+            if(Array123 <= 0) {allvalves1.setValue(Array123 + 1);}
+            if(Array123 >= 1) {allvalves1.setValue(Array123 - 1);}
+            if(Array678 <= 0) {allvalves2.setValue(Array678 + 1);}
+            if(Array678 >= 1) {allvalves2.setValue(Array678 - 1);}
+   
+            if(Array45 >= 1) {tridowncount1.setValue(Array45 - 1);}
+            if(Array910 >= 1) {tridowncount2.setValue(Array910 - 1);}}
+    
+            else
+    
+               equal = (inputFEcell.getValue() === triplexvalveArray[4]); //test if triplex
+               if(equal){
+               if(Array123 <= 0) {allvalves1.setValue(Array123 + 1);}
+               if(Array123 >= 1) {allvalves1.setValue(Array123 - 1);}
+               if(Array678 <= 0) {allvalves2.setValue(Array678 + 1);}
+               if(Array678 >= 1) {allvalves2.setValue(Array678 - 1);}
+   
+               if(Array45 >= 1) {tridowncount1.setValue(Array45 - 1);}
+               if(Array910 >= 1) {tridowncount2.setValue(Array910 - 1);}}
+  
+}
+   

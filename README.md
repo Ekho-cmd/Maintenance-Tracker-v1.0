@@ -1,5 +1,5 @@
 # Maintenance-Tracker-v1.0
-Original tracker sheet to be used until switch has been made to 3rd party database software.
+Original tracker sheet to be used to log equipment maintenance and job details. Was initially purposed to fill the gap between no standard parts ordering, and third-party parts and equipment database software. 
 
 <img width="685" alt="Input Sheet" src="https://user-images.githubusercontent.com/84663264/119367834-5d2d0780-bc80-11eb-933b-d7585a1fb045.png">
 <img width="745" alt="Scoreboard" src="https://user-images.githubusercontent.com/84663264/119367904-6e761400-bc80-11eb-9581-0c6242e83d0e.png">

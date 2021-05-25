@@ -124,9 +124,24 @@ Seats:
 Packing:
   Output of the difference between the "Current Pump Strokes" and "Strokes at Last Packing Change" shown as a percentage, indicating percentage of packing wear.
   
+Unit Number:
+  Selection to select a specific unit; this will populate the fluid end information from the most recent log entry.
   
-
-
+Current Strokes:
+  Output of the stroke count from the most recent log entry.
+  
+Current Deck Engine Hours:
+  Output of the deck engine hours from the most recent log entry.
+  
+Iron Expiration Date:
+  Output of the unit bridal iron expiration date from the most recent log entry.
+  
+Clean or Dirty:
+  Selection of the fluid system the unit is currently pumping (affects calculation for fluid end parts degradation).
+  
+Fluid End Type:
+  Output of the unit fluid end type fromt the most recent log entry.
+  
 <img width="745" alt="Scoreboard" src="https://user-images.githubusercontent.com/84663264/119367904-6e761400-bc80-11eb-9581-0c6242e83d0e.png">
 <img width="853" alt="Parts Sheet" src="https://user-images.githubusercontent.com/84663264/119367925-73d35e80-bc80-11eb-82ad-e55244066d83.png">
 <img width="618" alt="Log Sheet" src="https://user-images.githubusercontent.com/84663264/119367940-7635b880-bc80-11eb-8a95-770023ede602.png">

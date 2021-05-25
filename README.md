@@ -143,6 +143,40 @@ Fluid End Type:
   Output of the unit fluid end type fromt the most recent log entry.
   
 <img width="745" alt="Scoreboard" src="https://user-images.githubusercontent.com/84663264/119367904-6e761400-bc80-11eb-9581-0c6242e83d0e.png">
+
+*Parts Sheet:
+  The parts sheet receives input from the "Input" sheet. This is purposed for the Parts department to identify unit parts usage for replenishment.
+  
+Date:
+  Output of the date from the "Input" page.
+  
+Well/Stage #:
+  Output of the well identifier and stage number from the "Input" page.
+  
+Unit #:
+  Output of the unit number from the "Input" page.
+  
+Supervisor:
+  Output of the name of the supervisor from the "Input" page.
+  
+Fluid End Type:
+  Output of the fluid end type from the "Input" page.
+  
+Valves:
+  Output of the quantity of valves used from the "Input" page.
+  
+Conventional Seats:
+  Output of the quantity of the conventional seats used from the "Input" page.
+  
+Carbide Seats:
+  Output of the quantity of the carbide seats used from the "Input" page.
+  
+Serial Number:
+  Output of the searial number for carbide seats used from the "Input" page.
+  
+
+
+
 <img width="853" alt="Parts Sheet" src="https://user-images.githubusercontent.com/84663264/119367925-73d35e80-bc80-11eb-82ad-e55244066d83.png">
 <img width="618" alt="Log Sheet" src="https://user-images.githubusercontent.com/84663264/119367940-7635b880-bc80-11eb-8a95-770023ede602.png">
 <img width="636" alt="Search Sheet" src="https://user-images.githubusercontent.com/84663264/119367950-77ff7c00-bc80-11eb-947a-a6ed125b1835.png">

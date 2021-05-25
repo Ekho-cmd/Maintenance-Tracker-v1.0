@@ -87,6 +87,45 @@ Submit:
   
 <img width="689" alt="Input Sheet" src="https://user-images.githubusercontent.com/84663264/119549272-0cdba580-bd65-11eb-9bfd-cc2a5b3125e1.png">
 
+*Scoreboard:
+  The Scoreboard sheet is broken down into two parts; the fleet maintenance board on the left-hand side and the unit board on the right.
+  The purpose is to give an overview of fleet maintenance as well as being capabale of selecting a specific unit to observe it's indicidual fluid end components usage ratings. 
+
+Position:
+  The position indicates the physical position of the unit on the site.
+  
+Select Condition:
+  Selection options to indicate what type of fluid system the unit is pumping. This will affect the calculations for wear and tear on the units fluid end components.
+  
+Select Unit Number:
+  Selection to identify the unit number.
+  
+Seat Type:
+  Selection of type of seats installed in the fluid end.
+  
+Current Pump Strokes:
+  Input of the units current stroke count.
+  
+Strokes at Last Valve Change:
+  Input of the units stroke count at the last time the fluid end valves were inspected or replaced.
+  
+Strokes at Last Seat Change:
+  Input of the units stroke count at the last time the fluid end seats were inspected or replaced.
+  
+Strokes at Last Packing Change:
+  Input of the units stroke count at the last time the fluid end packings were inspected or replaced.
+  
+Valves:
+  Output of the difference between the "Current Pump Strokes" and "Strokes at Last Valve Change" shown as a percentage, indicating percentage of valve wear.
+  
+Seats:
+  Output of the difference between the "Current Pump Strokes" and "Strokes at Last Seat Change" shown as a percentage, indicating percentage of seat wear.
+  
+Packing:
+  Output of the difference between the "Current Pump Strokes" and "Strokes at Last Packing Change" shown as a percentage, indicating percentage of packing wear.
+  
+  
+
 
 <img width="745" alt="Scoreboard" src="https://user-images.githubusercontent.com/84663264/119367904-6e761400-bc80-11eb-9581-0c6242e83d0e.png">
 <img width="853" alt="Parts Sheet" src="https://user-images.githubusercontent.com/84663264/119367925-73d35e80-bc80-11eb-82ad-e55244066d83.png">

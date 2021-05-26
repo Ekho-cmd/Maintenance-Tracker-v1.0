@@ -302,6 +302,50 @@ Total Sand Volume Per Stage:
 Total Clean Volume Per Stage (bbl):
   Output of the total clean fluid volume recorded as barrels per minute (bpm), from the "Input" page.
   
+Slipstream (Y/N):
+  Output of the slipstream selection from the "Input" page.
+  
+Dirty of Clean:
+  Output of the dirty or clean selection from the "Input" page.
+  
+(# Valves Changed):
+  Output of the quantity of valves replaced from the "Input" page.
+  
+(# Seats Changed):
+  Output of the quantity of seats replaced from the "Input" page.
+  
+Seat Type (Carbide or Conventional):
+  Output of the selection of seat type from the "Input" page.
+  
+(# Packing Replaced):
+  Output of the quantity of packing replaced from the "Input" page.
+  
+Fluid End Type:
+  Output of the selection of fluid end type from the "Input" page.
+  
+NOTES:
+  Output of comments put in the notes section from the "Input" page.
+  
+ValveT1 - ValveT5:
+  Output of the top valves replaced in the unit fluid end from the "Input" page.
+  
+ValveB1 - ValveB5:
+  Output of the bottom valves replaced in the unit fluid end from the "Input" page.
+  
+CarbT1 - CarbT5:
+  Output of the top carbide seats replaced in the unit fluid end from the "Input" page.
+  
+CarbB1 - CarbB5:
+  Output of the bottom carbide seats replaced in the unit fluid end from the "Input" page.
+  
+ConvT1 - ConvT5:
+  Output of the top conventional seats replaced in the unit fluid end from the "Input" page.
+  
+ConvB1 - ConvB5:
+  Output of the bottom conventional seats replaced in the unit fluid end from the "Input" page.
+  
+
+  
 
   
 

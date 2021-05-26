@@ -344,12 +344,26 @@ ConvT1 - ConvT5:
 ConvB1 - ConvB5:
   Output of the bottom conventional seats replaced in the unit fluid end from the "Input" page.
   
-
+Packing1 - Packing5:
+  Output of the packing replaced in the unit fluid end from the "Input" page.
   
-
+Minimum Valve Strokes:
+  Output of the furthest stroke count the valves were replaced from the "Input" page.
   
-
+Minimum Seat Strokes:
+  Output of the furthest stroke count the seats were replaced from the "Input" page.
   
+Minimum Packing Strokes:
+  Output of the furthest stroke count the packings were replaced from the "Input" page.
+  
+Strokes at Last Valve Change:
+  Output of the most recent stroke count the valves were replaced from the "Input" page.
+  
+Strokes at Last Carb Seat Change:
+  Output of the most recent stroke count the carbide seats were replaced from the "Input" page.
+  
+Strokes at Last Packing Change:
+  Output of the most recent stroke count the packings were replaced from the "Input" page.
 
 <img width="618" alt="Log Sheet" src="https://user-images.githubusercontent.com/84663264/119367940-7635b880-bc80-11eb-8a95-770023ede602.png">
 <img width="636" alt="Search Sheet" src="https://user-images.githubusercontent.com/84663264/119367950-77ff7c00-bc80-11eb-947a-a6ed125b1835.png">

@@ -261,11 +261,92 @@ Name & Unit #:
 Supervisor:
   Input of the onsite supervisors name.
 
+<img width="853" alt="Parts Sheet" src="https://user-images.githubusercontent.com/84663264/119367925-73d35e80-bc80-11eb-82ad-e55244066d83.png">
+
+*Log:
+  The Log sheet is purposed to record the data input from the "Input" sheet, and is used as a relational database for retrieving data on the "Scoreboard", "Parts", and "Search" sheets.
+  
+Unit #'s:
+  Output of the unit number from the "Input" page.
+  
+Date:
+  Output of the date from the "Input" page.
+  
+Crew:
+  Output of the crew name from the "Input" page.
+  
+Supervisor:
+  Output of the supervisor name from the "Input" page.
+  
+Customer:
+  Output of the customer name from the "Input" page.
+  
+Wellsite Identifier:
+  Output of the wellsite identifier from the "Input" page.
+  
+Average Treating Pressure psi:
+  Output of the average treating pressure recorded in psi, from the "Input" page.
+  
+Stoke Count (Million):
+  Output of the unit stroke count recorded as n x E3, from the "Input" page.
+  
+Engine Hours:
+  Output of the unit engine hours from the "Input" page.
+  
+Iron Expiration Date:
+  Output of the iron expiration date from the "Input" page.
+  
+Total Sand Volume Per Stage:
+  Output of the total proppant volume pumped for the stage from the "Input" page.
+  
+Total Clean Volume Per Stage (bbl):
+  Output of the total clean fluid volume recorded as barrels per minute (bpm), from the "Input" page.
   
 
+  
 
+  
 
-<img width="853" alt="Parts Sheet" src="https://user-images.githubusercontent.com/84663264/119367925-73d35e80-bc80-11eb-82ad-e55244066d83.png">
 <img width="618" alt="Log Sheet" src="https://user-images.githubusercontent.com/84663264/119367940-7635b880-bc80-11eb-8a95-770023ede602.png">
 <img width="636" alt="Search Sheet" src="https://user-images.githubusercontent.com/84663264/119367950-77ff7c00-bc80-11eb-947a-a6ed125b1835.png">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

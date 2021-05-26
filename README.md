@@ -174,6 +174,94 @@ Carbide Seats:
 Serial Number:
   Output of the searial number for carbide seats used from the "Input" page.
   
+Spring:
+  Output of the quantity of springs used from the "Input" page.
+  
+D-Ring:
+  Output of the quantity of D-Rings used from the "Input" page.
+  
+Discharge Cover:
+  Output of the quantity of discharge covers used from the "Input" page.
+  
+Suction Cover:
+  Output of the quantity of suction covers used from the "Input" page.
+  
+Discharge Retaining Nut:
+  Output of the quantity of discharge retaining nuts used from the "Input" page.
+  
+Suction Retaining Nut:
+  Output of the quantity of suction retaining nuts used from the "Input" page.
+  
+Packing:
+  Output of the quantity of packings used from the "Input" page.
+  
+Packing Nut:
+  Output of the quantity of packing nuts used from the "Input" page.
+  
+Plunger:
+  Output of the quantity of plungers used from the "Input" page.
+  
+Pony Rod Clamp:
+  Output of the quantity of pony rod clamps used from the "Input" page.
+  
+Stuffing Box:
+  Output of the quantity of stuffing boxes used from the "Input" page.
+  
+Stuffing Box Seal:
+  Output of the quantity of stuffing box seals used from the "Input" page.
+  
+Stuffing Box Bolt:
+  Output of the quantity of stuffing box bolts used from the "Input" page.
+  
+Stuffing Box Sleeve:
+  Output of the quantity of stuffing box sleeves used from the "Input" page.
+  
+Face Seal:
+  Output of the quantity of face seals used fromt the "Input" page.
+  
+Spring Boot:
+  Output of the quantity of spring boots used from the "Input" page.
+  
+Valve Guide:
+  Output of the quantity of valve guides used from the "Input" page.
+  
+*Field Mechanic Use:
+  Area of sheet purposed for parts ordering by the onsite maintenance technicians.
+  
+Hours:
+  Input the unit engine hours.
+  
+Strokes:
+  Input the unit pony rod strokes.
+  
+Mechanic:
+  Input the name of the maintenance technician.
+  
+*Replensishment (Parts Department Use Only):
+  Area of sheet purposed for the Parts Department to input parts that have been billed for field delivery.
+  
+Date:
+  Input of the date parts have been billed.
+  
+Quantity:
+  Input of the quantity of parts that have been billed.
+  
+Notes:
+  Input for Parts Department comments.
+  
+*Driver & Unit #:
+  Area of sheet purposed for the use of the Dispatch Department identifying the driver name and unit number that is scheduled to deliver the parts to the field.
+  
+Name & Unit #:
+  Input of the driver name and the unit number they will be driving.
+  
+*Parts Recieved:
+  Area of sheet purposed for the onsite supervisor to verify the delivery of parts to the field.
+  
+Supervisor:
+  Input of the onsite supervisors name.
+
+  
 
 
 

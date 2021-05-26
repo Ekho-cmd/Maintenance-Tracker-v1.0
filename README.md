@@ -366,6 +366,42 @@ Strokes at Last Packing Change:
   Output of the most recent stroke count the packings were replaced from the "Input" page.
 
 <img width="618" alt="Log Sheet" src="https://user-images.githubusercontent.com/84663264/119367940-7635b880-bc80-11eb-8a95-770023ede602.png">
+
+*Search:
+  The search sheet is purposed as a tool to search maintenance records by unit number.
+  
+Select Unit Number From Dropdown:
+  Drop down selection used to select unit number.
+  
+Crew:
+  Output of the crew name from the "Log" page.
+  
+Supervisor:
+  Output of the supervisor name from the "Log" page.
+  
+Customer:
+  Output of the customer name from the "Log" page.
+  
+Wellsite Identifier:
+  Output of the wellsite identifier from the "Log" page.
+  
+Average Treating Pressure psi:
+  Output of the average treating pressure recorded in pounds per square inch (psi), from the "Log" page.
+  
+Stroke Count (Million):
+  Output of the stroke count recorded as n x E3 from the "Log" page.
+  
+Engine Hours:
+  Output of the unit engine hours from the "Log" page.
+  
+Iron Expiration Date:
+  Output of the iron expiration date from the "Log" page.
+  
+Total Sand Volume Per Stage:
+  Output of the total proppant volume recorded in pounds used for the stage, from the "Log" page.
+  
+
+
 <img width="636" alt="Search Sheet" src="https://user-images.githubusercontent.com/84663264/119367950-77ff7c00-bc80-11eb-947a-a6ed125b1835.png">
 
 

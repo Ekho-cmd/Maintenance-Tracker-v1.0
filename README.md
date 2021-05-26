@@ -400,28 +400,55 @@ Iron Expiration Date:
 Total Sand Volume Per Stage:
   Output of the total proppant volume recorded in pounds used for the stage, from the "Log" page.
   
-
-
+Total Clean Volume Per Stage:
+  Output of the total clean fluid volume recorded in barrels per minute (bpm), from the "Log" page.
+  
+Slipstream (Y or N):
+  Output of the slipstream selection from the "Log" page.
+  
+Dirty of Clean:
+  Output of the dirty or clean selection from the "Log" page.
+  
+(# Valves Changed):
+  Output of the quantity of valves used from the "Log" page.
+  
+(# Seats Changed):
+  Output of the quantity of seats used from the "Log" page.
+  
+Seat Type (Carbide or Conventional):
+  Output of the selection of seat type from the "Log" page.
+  
+(# Packing Replaced):
+  Output of the quantity of packing replaced in the unit fluid end from the "Log" page.
+  
+Fluid End Type:
+  Output of the unit fluid end type from the "Log" page.
+  
+Notes:
+  Output of the notes from the "Log" page.
+   
+ValveT1 - ValveT5:
+  Output of the top valves replaced in the unit fluid end from the "Log" page.
+  
+ValveB1 - ValveB5:
+  Output of the bottom valves replaced in the unit fluid end from the "Log" page.
+  
+CarbT1 - CarbT5:
+  Output of the top carbide seats replaced in the unit fluid end from the "Log" page.
+  
+CarbB1 - CarbB5:
+  Output of the bottom carbide seats replaced in the unit fluid end from the "Log" page.
+  
+ConvT1 - ConvT5:
+  Output of the top conventional seats replaced in the unit fluid end from the "Log" page.
+  
+ConvB1 - ConvB5:
+  Output of the bottom conventional seats replaced in the unit fluid end from the "Log" page.
+  
+Packing1 - Packing5:
+  Output of the packings replaced in the unit fluid end from the "Log" page.
+  
 <img width="636" alt="Search Sheet" src="https://user-images.githubusercontent.com/84663264/119367950-77ff7c00-bc80-11eb-947a-a6ed125b1835.png">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

@@ -1,5 +1,5 @@
 # Maintenance-Tracker-v1.0
-Original tracker sheet to be used to log equipment maintenance and job details. Was initially purposed to fill the gap between no standard parts ordering, and third-party parts and equipment database software. 
+Original tracker sheet to be used to log equipment maintenance and job details. Was initially purposed to fill the gap between email parts ordering, and third-party parts and equipment database software. 
 
 *Input Sheet
   The input sheet is to be used to input job details and as equipment parts usage entry.
@@ -88,8 +88,8 @@ Submit:
 <img width="689" alt="Input Sheet" src="https://user-images.githubusercontent.com/84663264/119549272-0cdba580-bd65-11eb-9bfd-cc2a5b3125e1.png">
 
 *Scoreboard:
-  The Scoreboard sheet is broken down into two parts; the fleet maintenance board on the left-hand side and the unit board on the right.
-  The purpose is to give an overview of fleet maintenance as well as being capabale of selecting a specific unit to observe it's indicidual fluid end components usage ratings. 
+  The Scoreboard sheet is broken down into two parts; the fleet maintenance board on the left-hand side and the unit board on the right-hand side.
+  The purpose is to give an overview of fleet maintenance, as well as being capabale of selecting a specific unit to observe the individual fluid end components usage. 
 
 Position:
   The position indicates the physical position of the unit on the site.
@@ -264,7 +264,7 @@ Supervisor:
 <img width="853" alt="Parts Sheet" src="https://user-images.githubusercontent.com/84663264/119367925-73d35e80-bc80-11eb-82ad-e55244066d83.png">
 
 *Log:
-  The Log sheet is purposed to record the data input from the "Input" sheet, and is used as a relational database for retrieving data on the "Scoreboard", "Parts", and "Search" sheets.
+  The Log sheet is purposed to record the data input from the "Input" sheet, and is used as a relational database for retrieving data with the "Scoreboard", "Parts", and "Search" sheets.
   
 Unit #'s:
   Output of the unit number from the "Input" page.
